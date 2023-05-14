@@ -45,23 +45,23 @@ export default function Hero() {
             <p className="text-black text-left text-xl text-justify sm:text-lg pb-12 pt-12 sm:pt-5 pr-24 pr-5">
               En tant que consultant en énergie et climat, mon travail consiste
               à aider les entreprises, les gouvernements et les organisations à
-              réduire leur impact sur l'environnement en mettant en place des
+              réduire leur impact sur l&apos;environnement en mettant en place des
               stratégies durables et efficaces. Mon rôle est de les accompagner
-              dans leur transition vers des pratiques plus respectueuses de l'environnement en proposant des solutions innovantes et
+              dans leur transition vers des pratiques plus respectueuses de l&apos;environnement en proposant des solutions innovantes et
               personnalisées.Je travaille en étroite collaboration avec mes
-              clients pour évaluer leur consommation d'énergie et leur
-              empreinte carbone, et élaborer des plans d'action concrets pour
+              clients pour évaluer leur consommation d&apos;énergie et leur
+              empreinte carbone, et élaborer des plans d&apos;action concrets pour
               réduire ces impacts négatifs. Je les conseille également sur les
               technologies et les pratiques les plus adaptées pour maximiser
-              leur efficacité énergétique et leur utilisation d'énergies
-              renouvelables. Mon objectif est d'aider mes clients à devenir des
+              leur efficacité énergétique et leur utilisation d&apos;énergies
+              renouvelables. Mon objectif est d&apos;aider mes clients à devenir des
               leaders de la transition énergétique, tout en maximisant leur
-              rentabilité et en créant un impact positif sur l'environnement et
+              rentabilité et en créant un impact positif sur l&apos;environnement et
               la société dans son ensemble.{" "}
             </p>{" "}
             <button className="bg-009999 border rounded-md p-2">
               <a href="" className="uppercase text-white">
-                Découvrez nos champs d'expertise{" "}
+                Découvrez nos champs d&apos;expertise{" "}
               </a>{" "}
             </button>
           </div>{" "}
@@ -86,10 +86,10 @@ export default function Hero() {
               énergétique et climatique{" "}
             </p>{" "}
             <p className="text-black text-center text-xl sm:hidden sm:pr-5 pt-5 px-64">
-              La transition énergétique et climatique est un sujet d'actualité
+              La transition énergétique et climatique est un sujet d&apos;actualité
               majeur. <br />
               Pour mieux comprendre les enjeux qui y sont liés, il est important
-              de s'informer et de se tenir au courant des dernières avancées
+              de s&apos;informer et de se tenir au courant des dernières avancées
               dans ce domaine.{" "}
             </p>
           </div>
@@ -104,7 +104,7 @@ export default function Hero() {
             />
             <div class="mt-4">
               <h1 class="text-2xl font-bold text-gray-700">
-                Titre de l'article
+                Titre de l&apos;article
               </h1>
               <p class="text-sm mt-2 text-gray-700">Texte explicatif</p>
               <div class="mt-4 mb-2 flex justify-between pr-2">
@@ -123,7 +123,7 @@ export default function Hero() {
             />
             <div class="mt-4">
               <h1 class="text-2xl font-bold text-gray-700">
-                Titre de l'article
+                Titre de l&apos;article
               </h1>
               <p class="text-sm mt-2 text-gray-700">Texte explicatif</p>
 
@@ -143,7 +143,7 @@ export default function Hero() {
             />
             <div class="mt-4">
               <h1 class="text-2xl font-bold text-gray-700">
-                Titre de l'article
+                Titre de l&apos;article
               </h1>
               <p class="text-sm mt-2 text-gray-700">Texte explicatif</p>
 
