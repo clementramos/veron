@@ -94,7 +94,7 @@ export default function Navbar() {
                             <Menu.Items className="absolute right-0 z-10 mt-2 w-full origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                               <Menu.Item>
                                 {({ active }) => (
-                                  <a
+                                  <Link
                                     href="/sensibilisation"
                                     className={classNames(
                                       active ? "bg-gray-100" : "",
@@ -102,12 +102,12 @@ export default function Navbar() {
                                     )}
                                   >
                                     <p className="text-009999">Sensibilisation et formation (FDC) </p>
-                                  </a>
+                                  </Link>
                                 )}
                               </Menu.Item>
                               <Menu.Item>
                                 {({ active }) => (
-                                  <a
+                                  <Link
                                     href="/bilan-carbone"
                                     className={classNames(
                                       active ? "bg-gray-100" : "",
@@ -115,12 +115,12 @@ export default function Navbar() {
                                     )}
                                   >
                                     <p className="text-009999">Bilan Carbone® </p>
-                                  </a>
+                                  </Link>
                                 )}
                               </Menu.Item>
                               <Menu.Item>
                                 {({ active }) => (
-                                  <a
+                                  <Link
                                     href=""
                                     className={classNames(
                                       active ? "bg-gray-100" : "",
@@ -128,12 +128,12 @@ export default function Navbar() {
                                     )}
                                   >
                                     <p className="text-009999">ACV </p>
-                                  </a>
+                                  </Link>
                                 )}
                               </Menu.Item>
                               <Menu.Item>
                                 {({ active }) => (
-                                  <a
+                                  <Link
                                     href=""
                                     className={classNames(
                                       active ? "bg-gray-100" : "",
@@ -141,11 +141,11 @@ export default function Navbar() {
                                     )}
                                   >
                                     <p className="text-009999">Stratégie neutralité carbone  </p>
-                                  </a>
+                                  </Link>
                                 )}
                               </Menu.Item><Menu.Item>
                                 {({ active }) => (
-                                  <a
+                                  <Link
                                     href=""
                                     className={classNames(
                                       active ? "bg-gray-100" : "",
@@ -153,7 +153,7 @@ export default function Navbar() {
                                     )}
                                   >
                                     <p className="text-009999">Stratégie résilience  </p>
-                                  </a>
+                                  </Link>
                                 )}
                               </Menu.Item>
                             </Menu.Items>
@@ -178,7 +178,7 @@ export default function Navbar() {
                             <Menu.Items className="absolute right-0 z-10 mt-2 w-full origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                               <Menu.Item>
                                 {({ active }) => (
-                                  <a
+                                  <Link
                                     href="/graphiques"
                                     className={classNames(
                                       active ? "bg-gray-100" : "",
@@ -186,12 +186,12 @@ export default function Navbar() {
                                     )}
                                   >
                                     <p className="text-009999">Energie climat en 5 graphiques </p>
-                                  </a>
+                                  </Link>
                                 )}
                               </Menu.Item>
                               <Menu.Item>
                                 {({ active }) => (
-                                  <a
+                                  <Link
                                     href="/kaya"
                                     className={classNames(
                                       active ? "bg-gray-100" : "",
@@ -199,7 +199,7 @@ export default function Navbar() {
                                     )}
                                   >
                                     <p className="text-009999">Kaya</p>
-                                  </a>
+                                  </Link>
                                 )}
                               </Menu.Item>
                             </Menu.Items>

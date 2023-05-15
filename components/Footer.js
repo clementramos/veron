@@ -19,9 +19,9 @@ export default function Footer() {
           <div className="text-right text-2xl mx-auto my-auto">
             <ul class="text-009999 dark:text-gray-400">
               <li class="mb-4">
-                <a href="/mention-legales" class="hover:underline">
+                <Link href="/mention-legales" class="hover:underline">
                   Mention légales
-                </a>
+                </Link>
               </li>
               <li class="mb-4">
                 <Link href="/contact" class="hover:underline">
@@ -29,9 +29,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="" class="hover:underline">
+                <Link href="" class="hover:underline">
                   LISTE 3
-                </a>
+                </Link>
               </li>
             </ul>
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 laptop:hidden" />
