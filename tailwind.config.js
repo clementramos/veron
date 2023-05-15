@@ -10,6 +10,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+    
       colors: {
         '009999' : '#009999',
       },
@@ -34,7 +35,7 @@ module.exports = {
     },
     backgroundImage: {
       'forest' : "url(../../public/bg.png)",
-      
+      'expertise' :"url(../../public/expertise.jpg)",
     },
   },
   plugins: [],

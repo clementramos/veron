@@ -5,13 +5,8 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 
 const navigation = [
-  { name: "ONGLET 1", href: "/", current: false },
-  { name: "ONGLET 2", href: "/", current: false },
-  { name: "ONGLET 3", href: "/", current: false },
-  { name: "ONGLET 4", href: "/", current: false },
-  {
-    /*{ name: 'Blog', href: '/blog', current: false},*/
-  },
+  { name: "EXPERTISE", href: "/expertise", current: false },
+  { name: "RESSOURCES", href: "/", current: false },
 ];
 
 function classNames(...classes) {
@@ -64,20 +59,153 @@ export default function Navbar() {
                   </Disclosure.Button>
                 </div>
                 <div className="flex flex-1 items-center justify-start ">
-                  <div className="flex flex-shrink-0 items-center pr-10">
-                    <Image
-                      className="mr-2"
-                      src="/Flyer Un&Demi.png"
-                      width={18}
-                      height={18}
-                      alt="logo"
-                    />
-                    <p className="text-2xl font-bold text-009999">UN&DEMI</p>
-                  </div>
+                  <Link href="/">
+                    <div className="flex flex-shrink-0 items-center pr-10">
+                      <Image
+                        className="mr-2"
+                        src="/Flyer Un&Demi.png"
+                        width={18}
+                        height={18}
+                        alt="logo"
+                      />
+                      <p className="text-2xl font-bold text-009999">UN&DEMI</p>
+                    </div>
+                  </Link>
+
                   <div className="flex flex-1 items-center justify-center">
                     <div className="sm:hidden sm:ml-6 sm:block flex justify-center">
                       <div className="flex space-x-4">
-                        {navigation.map((item) => (
+                        {/* dropdown 1*/}
+                        <Menu as="div" className="relative ml-3 pr-5 w-64">
+                          <div>
+                            <Menu.Button className="flex rounded-full bg-white text-sm">
+                              <p className="text-009999 font-thin hover:bg-white hover:text-black px-3 py-2 rounded-md text-xl font-medium">EXPERTISE</p>
+                            </Menu.Button>
+                          </div>
+                          <Transition
+                            as={Fragment}
+                            enter="transition ease-out duration-100"
+                            enterFrom="transform opacity-0 scale-95"
+                            enterTo="transform opacity-100 scale-100"
+                            leave="transition ease-in duration-75"
+                            leaveFrom="transform opacity-100 scale-100"
+                            leaveTo="transform opacity-0 scale-95"
+                          >
+                            <Menu.Items className="absolute right-0 z-10 mt-2 w-full origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <a
+                                    href="/sensibilisation"
+                                    className={classNames(
+                                      active ? "bg-gray-100" : "",
+                                      "block px-2 py-2"
+                                    )}
+                                  >
+                                    <p className="text-009999">Sensibilisation et formation (FDC) </p>
+                                  </a>
+                                )}
+                              </Menu.Item>
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <a
+                                    href="/bilan-carbone"
+                                    className={classNames(
+                                      active ? "bg-gray-100" : "",
+                                      "block px-2 py-2"
+                                    )}
+                                  >
+                                    <p className="text-009999">Bilan Carbone® </p>
+                                  </a>
+                                )}
+                              </Menu.Item>
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <a
+                                    href=""
+                                    className={classNames(
+                                      active ? "bg-gray-100" : "",
+                                      "block px-2 py-2"
+                                    )}
+                                  >
+                                    <p className="text-009999">ACV </p>
+                                  </a>
+                                )}
+                              </Menu.Item>
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <a
+                                    href=""
+                                    className={classNames(
+                                      active ? "bg-gray-100" : "",
+                                      "block px-2 py-2"
+                                    )}
+                                  >
+                                    <p className="text-009999">Stratégie neutralité carbone  </p>
+                                  </a>
+                                )}
+                              </Menu.Item><Menu.Item>
+                                {({ active }) => (
+                                  <a
+                                    href=""
+                                    className={classNames(
+                                      active ? "bg-gray-100" : "",
+                                      "block px-2 py-2"
+                                    )}
+                                  >
+                                    <p className="text-009999">Stratégie résilience  </p>
+                                  </a>
+                                )}
+                              </Menu.Item>
+                            </Menu.Items>
+                          </Transition>
+                        </Menu>
+                        {/* dropdown 2 */}
+                        <Menu as="div" className="relative ml-3 pr-5 w-64">
+                          <div>
+                            <Menu.Button className="flex rounded-full bg-white text-sm">
+                              <p className="text-009999 font-thin hover:bg-white hover:text-black px-3 py-2 rounded-md text-xl font-medium">RESSOURCES</p>
+                            </Menu.Button>
+                          </div>
+                          <Transition
+                            as={Fragment}
+                            enter="transition ease-out duration-100"
+                            enterFrom="transform opacity-0 scale-95"
+                            enterTo="transform opacity-100 scale-100"
+                            leave="transition ease-in duration-75"
+                            leaveFrom="transform opacity-100 scale-100"
+                            leaveTo="transform opacity-0 scale-95"
+                          >
+                            <Menu.Items className="absolute right-0 z-10 mt-2 w-full origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <a
+                                    href="/graphiques"
+                                    className={classNames(
+                                      active ? "bg-gray-100" : "",
+                                      "block px-2 py-2"
+                                    )}
+                                  >
+                                    <p className="text-009999">Energie climat en 5 graphiques </p>
+                                  </a>
+                                )}
+                              </Menu.Item>
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <a
+                                    href="/kaya"
+                                    className={classNames(
+                                      active ? "bg-gray-100" : "",
+                                      "block px-2 py-2"
+                                    )}
+                                  >
+                                    <p className="text-009999">Kaya</p>
+                                  </a>
+                                )}
+                              </Menu.Item>
+                            </Menu.Items>
+                          </Transition>
+                        </Menu>
+                        {/* {navigation.map((item) => (
                           <a
                             key={item.name}
                             href={item.href}
@@ -91,7 +219,7 @@ export default function Navbar() {
                           >
                             {item.name}
                           </a>
-                        ))}
+                        ))} */}
                       </div>
                     </div>
                   </div>

@@ -7,6 +7,7 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import axios from "axios";
+import Head from "next/head";
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = React.useState(false);
@@ -83,6 +84,12 @@ export default function Contact() {
 
   return (
     <>
+      <Head>
+        <title>UN&DEMI - Contact</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/mainlogo.svg" />
+      </Head>
       <Navbar />
       <div className="h-full bg-white">
         <div className="h-fit py-5 text-start grid grid-cols-6">
