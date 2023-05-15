@@ -45,7 +45,7 @@ async function sendEmails(req, res) {
     let info = await transporter.sendMail({
         from: adminEmail,
         to: recipEmail, // list of receivers
-        subject: "Nouveau message !", // Subject line
+        subject: "Message reçu !", // Subject line
         text: sendTxt, // plain text body
         html: sendHtml, // html body
     });
