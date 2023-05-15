@@ -24,9 +24,9 @@ export default function Footer() {
                 </a>
               </li>
               <li class="mb-4">
-                <a href="/contact" class="hover:underline">
+                <Link href="/contact" class="hover:underline">
                   LISTE 2
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="/adminPage" class="hover:underline">
