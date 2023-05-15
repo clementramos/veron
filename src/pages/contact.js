@@ -218,9 +218,9 @@ export default function Contact() {
                 <>
                   <p className="text-black text-6xl font-bold mb-10">Merci !</p>
                   <p className="text-black text-2xl">
-                    Votre réservation est prise en compte.
+                    Votre demande de contact à bien été prise en compte.
                     <br></br>
-                    Vous devrez recevoir un mail de confirmation sous peu.
+                    Vous recevrez un mail de confirmation sous peu.
                   </p>
                   <p className="text-black text-lg pt-5">
                     Vous pouvez maintenant quitter cette page.
