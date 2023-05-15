@@ -21,10 +21,10 @@ function classNames(...classes) {
 export default function Navbar() {
   return (
     <>
-      <Disclosure as="nav" className="w-full h-fit bg-white p-5">
+      <Disclosure as="nav" className="w-full h-fit bg-white p-5 ">
         {({ open }) => (
           <>
-            <div className="mx-auto px-2 sm:px-6 lg:items-center">
+            <div className="mx-auto px-2 pb-5 sm:px-6 lg:items-center shadow-sm">
               <div className="relative flex h-fit items-center justify-between">
                 <div className="absolute inset-y-0 right-0 flex items-center laptop:hidden">
                   {/* Mobile menu button*/}
@@ -97,7 +97,9 @@ export default function Navbar() {
                   </div>
                 </div>
                 <button className="bg-009999 border rounded-md p-2 sm:hidden">
-                  <p className="text-2xl font-bold text-white">CONTACT</p>
+                  <Link href="/contact">
+                    <p className="text-2xl font-bold text-white">CONTACT</p>
+                  </Link>
                 </button>
                 <div className="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto  sm:pr-0"></div>
               </div>
