@@ -218,7 +218,7 @@ export default function Contact() {
                 <>
                   <p className="text-black text-6xl font-bold mb-10">Merci !</p>
                   <p className="text-black text-2xl">
-                    Votre demande de contact à bien été prise en compte.
+                    Votre demande de contact a bien été prise en compte.
                     <br></br>
                     Vous recevrez un mail de confirmation sous peu.
                   </p>
