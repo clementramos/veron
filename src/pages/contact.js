@@ -21,12 +21,6 @@ export default function Contact() {
 
   // Our Yup Schema for this form
   const ContactSchema = yup.object().shape({
-    object: yup
-      .string()
-      .label("Object du message")
-      .required(errMess.req)
-      .min(3)
-      .max(55),
     name: yup.string().label("Nom").required(errMess.req).min(3).max(20),
     id: yup.string().label("Prénom").required(errMess.req).min(3).max(20),
     email: yup
@@ -124,22 +118,6 @@ export default function Contact() {
               {!isSubmitted ? (
                 <>
                   <form onSubmit={handleSubmit((data) => submitForm(data))}>
-                    <label
-                      htmlFor="object"
-                      className="text-left block text-base font-medium text-black"
-                    >
-                      Objet du message *
-                    </label>
-                    <p className="text-red-500 italic">
-                      {errors.object?.message}
-                    </p>
-                    <input
-                      type="text"
-                      placeholder="Veuillez indiquer l'objet de votre message"
-                      isInvalid={errors.object}
-                      {...register("object")}
-                      className="focus:outline-none focus:ring focus:border-none focus:ring-yellow-ecf py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full mb-5"
-                    />
                     <div className="">
                       <label
                         htmlFor="name"
