@@ -33,6 +33,8 @@ async function sendEmails(req, res) {
     const template = await getPubFile("/email-templates/template.html");
     const custHtml = await getPubFile("/email-templates/customer.html");
     const adminHtml = await getPubFile("/email-templates/admin.html");
+    const custTxt = await getPubFile("/email-templates/customer.txt");
+    const adminTxt = await getPubFile("/email-templates/admin.txt");
 
     // Format our recipient email address
     const recipEmail = `${req.body.name} <${req.body.email}>`;
@@ -41,11 +43,19 @@ async function sendEmails(req, res) {
     let sendHtml = template.replace("%BODY%", custHtml)
         .replace("%ID%", req.body.id)
 
+    let sendTxt = custTxt
+        .replace("%NAME%", req.body.name)
+        .replace("%EMAIL%", req.body.email)
+        .replace("%DATE%", req.body.date)
+        .replace("%HOUR%", req.body.hour)
+        .replace("%COUVERTS%", req.body.couverts)
+        .replace("%ALLERGIES%", req.body.radioGroup);
+
     // Send our customer-bound email
     let info = await transporter.sendMail({
         from: adminEmail,
         to: recipEmail, // list of receivers
-        subject: "Message reçu !", // Subject line
+        subject: "Nouveau message !", // Subject line
         text: sendTxt, // plain text body
         html: sendHtml, // html body
     });
@@ -60,7 +70,16 @@ async function sendEmails(req, res) {
     .replace("%EMAIL%", req.body.email)
     .replace("%ID%", req.body.id)
     .replace("%ENTREPRISE%", req.body.entreprise)
+    .replace("%OBJECT%", req.body.object)
     .replace("%MESSAGE%", req.body.message);
+
+    sendTxt = adminTxt
+        .replace("%NAME%", req.body.name)
+        .replace("%EMAIL%", req.body.email)
+        .replace("%ID%", req.body.date)
+        .replace("%ENTREPRISE%", req.body.hour)
+        .replace("%OBJECT%", req.body.couverts)
+        .replace("%MESSAGE%", req.body.radioGroup);
 
     info = await transporter.sendMail({
         from: recipEmail,
