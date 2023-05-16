@@ -7,6 +7,17 @@
   min-height: 100vh;
 }
 
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: red;
+  transform-origin: 0%;
+  z-index: 100;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
