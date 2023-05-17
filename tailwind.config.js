@@ -41,6 +41,7 @@ module.exports = {
       },
     },
     backgroundImage: {
+      'ocean' : "url(../../public/ocean3.avif)",
       'forest' : "url(../../public/bg.png)",
       'expertise' :"url(../../public/expertise.jpg)",
     },

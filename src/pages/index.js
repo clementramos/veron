@@ -18,7 +18,6 @@ export default function Home() {
         <link rel="icon" href="/mainlogo.svg" />
       </Head>
       
-      <Navbar />
       <Hero />
       <Footer />
     </>

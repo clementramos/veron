@@ -5,8 +5,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 
 const navigation = [
-  { name: "EXPERTISE", href: "/expertise", current: false },
-  { name: "RESSOURCES", href: "/", current: false },
+  { name: "QUI SUIS-JE ?", href:"/qui-suis-je", current: false },
 ];
 
 function classNames(...classes) {
@@ -68,7 +67,7 @@ export default function Navbar() {
                         height={18}
                         alt="logo"
                       />
-                      <p className="text-2xl font-bold text-009999">UN&DEMI</p>
+                      <p className="text-2xl font-bold text-009999 tracking-wide">UN&DEMI</p>
                     </div>
                   </Link>
 
@@ -198,14 +197,40 @@ export default function Navbar() {
                                       "block px-2 py-2"
                                     )}
                                   >
-                                    <p className="text-009999">Kaya</p>
+                                    <p className="text-009999">L&apos;équation de Kaya</p>
+                                  </Link>
+                                )}
+                              </Menu.Item>
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <Link
+                                    href="/kaya"
+                                    className={classNames(
+                                      active ? "bg-gray-100" : "",
+                                      "block px-2 py-2"
+                                    )}
+                                  >
+                                    <p className="text-009999">Le Bilan Carbone du Français moyen</p>
+                                  </Link>
+                                )}
+                              </Menu.Item> <Menu.Item>
+                                {({ active }) => (
+                                  <Link
+                                    href="/kaya"
+                                    className={classNames(
+                                      active ? "bg-gray-100" : "",
+                                      "block px-2 py-2"
+                                    )}
+                                  >
+                                    <p className="text-009999">Les infographies qui percutent</p>
                                   </Link>
                                 )}
                               </Menu.Item>
                             </Menu.Items>
                           </Transition>
                         </Menu>
-                        {/* {navigation.map((item) => (
+                
+                        {navigation.map((item) => (
                           <a
                             key={item.name}
                             href={item.href}
@@ -219,14 +244,14 @@ export default function Navbar() {
                           >
                             {item.name}
                           </a>
-                        ))} */}
+                        ))} 
                       </div>
                     </div>
                   </div>
                 </div>
                 <button className="bg-009999 border rounded-md p-2 sm:hidden">
                   <Link href="/contact">
-                    <p className="text-2xl font-bold text-white">CONTACT</p>
+                    <p className="text-2xl font-bold text-white tracking-wide">CONTACT</p>
                   </Link>
                 </button>
                 <div className="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto  sm:pr-0"></div>
