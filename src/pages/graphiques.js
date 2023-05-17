@@ -8,20 +8,20 @@ export default function Expertise() {
   return (
     <>
       <Head>
-        <title>UN&DEMI - Energie climat en 5 graphiques</title>
+        <title>UN&DEMI - Energie climat en 6 graphiques</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/mainlogo.svg" />
       </Head>
       <Navbar />
-      <div className="bg-white bg-cover h-full">
-        <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12">
-          Energie climat en 5 graphiques
+      <div className="bg-white bg-cover h-full sm:px-2 ">
+        <p className="text-009999 text-4xl font-bold uppercase laptop:ml-12 pt-12 mb-12 sm:text-center">
+          Energie climat en 6 graphiques
         </p>
-        <p className="text-009999 mx-12 pt-2 text-2xl">
+        <p className="text-009999 laptop:mx-12 pt-2 text-2xl">
           <ol className="ml-12 list-decimal">
             <li>
-              <p className="text-009999  ml-2 pt-2 text-2xl">
+              <p className="text-black  ml-2 pt-2 text-2xl">
                 La population mondiale explose à partir du XIX° siècle en
                 passant de 1 milliard à 8 milliards d&apos;être humain sur Terre
                 en 200 ans (+7 milliards). Elle est pourtant passée de 100
@@ -37,13 +37,13 @@ export default function Expertise() {
               />
             </li>
             <li>
-              <p className="text-009999  ml-2 pt-2 text-2xl">
-                L&apos;énergie primaire consommée dans le monde explose de la même
-                façon à partir des années 1850. Elle est composée aujourd&apos;hui à
-                80% d&apos;énergie fossile issue de matières premières
-                non-renouvelables à l&apos;échelle des temps humains. Le pétrole, le
-                charbon et le gaz. Ces derniers émettent du dioxyde de carbone
-                CO2 lors de leur combustion.
+              <p className="text-black  ml-2 pt-2 text-2xl">
+                L&apos;énergie primaire consommée dans le monde explose de la
+                même façon à partir des années 1850. Elle est composée
+                aujourd&apos;hui à 80% d&apos;énergie fossile issue de matières
+                premières non-renouvelables à l&apos;échelle des temps humains.
+                Le pétrole, le charbon et le gaz. Ces derniers émettent du
+                dioxyde de carbone CO2 lors de leur combustion.
               </p>
               <Image
                 className="ml-12 pt-5 pb-12 sm:mx-auto"
@@ -54,38 +54,64 @@ export default function Expertise() {
               />
             </li>
             <li>
-              <p className="text-009999  ml-2 pt-2 text-2xl">
+              <p className="text-black  ml-2 pt-2 text-2xl">
                 Le PIB est un indicateur économique permettant d&apos;évaluer la
                 production de biens et de services. Il revient à calculer la
-                rémunération annuelle de l&apos;ensemble de l&apos;humanité. Le PIB
-                mondiale passe de 10 à 90 trillions de dollars USD constants en
-                à peine plus de 100 ans.
+                rémunération annuelle de l&apos;ensemble de l&apos;humanité. Le
+                PIB mondial passe de 10 à 90 trillions de dollars USD constants
+                en à peine plus de 100 ans.
               </p>
               <Image
-                className="ml-12 pt-5 pb-12 sm:mx-auto"
+                className="ml-12 pt-5  sm:mx-auto"
                 src="/PIB mondial.png"
                 alt="pib"
                 width={800}
                 height={200}
               />
+              <p className="text-sm italic pb-12 text-gray-500 text-sm">
+                Source : World Bank
+              </p>
             </li>
             <li>
-              <p className="text-009999  ml-2 pt-2 text-2xl">
-                Le graphique ci-dessous démontre la casi-parfaite
-                proportionnalité entre l&apos;évolution du PIB mondiale et celle de
-                la consommation d&apos;énergie. (je n ai pas le graphique)
+              <p className="text-black  ml-2 pt-2 text-2xl">
+                Le graphique ci-dessous démontre la proportionnalité entre
+                l&apos;évolution du PIB mondial et celle de la consommation
+                d&apos;énergie.<br></br> « Donnez-moi le PIB mondial sur une
+                année donnée, je vous donnerai la quantité d&apos;énergie que
+                vous avez employé sur cette même année »
+              </p>
+              <Image
+                className="ml-12 pt-5 sm:mx-auto"
+                src="/gdp_energy.png"
+                alt="evolution mondiale"
+                width={800}
+                height={200}
+              />
+              <p className="text-sm italic pb-12 text-gray-500 text-sm">
+                Source : The shift Project ÉTUDE DU LIEN ENTRE PIB ET
+                CONSOMMATION D&apos;ÉNERGIE
+              </p>
+            </li>
+            <li>
+              <p className="text-black  ml-2 pt-2 text-2xl">
+                L&apos;augmentation de la concentration atmosphérique en CO2
+                entraine une augmentation de l&apos;effet de serre additionnel
+                et par conséquent la température moyenne globale de la terre
+                augmente
               </p>
               <Image
                 className="ml-12 pt-5 pb-12 sm:mx-auto"
-                src="/"
-                alt="evolution mondiale"
+                src="/hemisphère-nord-temperature-an-0.jpg"
+                alt="co2"
                 width={800}
                 height={200}
               />
             </li>
             <li>
-              <p className="text-009999  ml-2 pt-2 text-2xl">
-                Evolution de la concentration atmosphérique en CO2
+              <p className="text-black  ml-2 pt-2 text-2xl">
+                L&apos;usage exponentiel des énergie fossiles entraine
+                mécaniquement une augmentation exponentielle de l&apos;évolution
+                de la concentration atmosphérique en CO2
               </p>
               <Image
                 className="ml-12 pt-5 pb-12 sm:mx-auto"

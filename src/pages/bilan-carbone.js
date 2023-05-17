@@ -15,17 +15,17 @@ export default function Expertise() {
       </Head>
       <Navbar />
       <div className="bg-white bg-cover h-full">
+        <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12">
+          Calcul de votre Bilan Carbone®
+        </p>
         <Image
-          className="mx-auto"
+          className="mx-auto pb-10"
           src="/logo-bilan-carbone-final.png"
           alt="bilan carbone - logo"
           width={1000}
           height={200}
         />
-        <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12">
-          Calcul de votre Bilan Carbone®
-        </p>
-        <p className="text-009999 mx-12 pt-2 text-2xl">
+        <p className="text-black mx-12 pt-2 text-2xl">
           <b>
             Changement climatique, énergie : l&apos;urgence et la nécessité
             d&apos;agir.{" "}
@@ -33,7 +33,7 @@ export default function Expertise() {
           <br></br>
         </p>
 
-        <p className="text-009999  ml-12 pt-2 text-2xl">
+        <p className="text-black  ml-12 pt-2 text-2xl">
           Avec le Bilan Carbone®, les décideurs publics et privés disposent
           d&apos;un moyen efficace pour initier et piloter la réduction des
           émissions de gaz à effet de serre liées à leur activité. La méthode
@@ -46,10 +46,10 @@ export default function Expertise() {
           fossiles. La méthode et ses outils vous permettront également de
           préparer votre bilan GES réglementaire.
         </p>
-        <p className="text-009999 font-bold ml-12 pt-6 text-2xl">
+        <p className="text-black font-bold ml-12 pt-6 text-2xl">
           Les étapes clefs de la mission Bilan Carbone® :{" "}
         </p>
-        <p className="text-009999  ml-12 pt-2 text-2xl">
+        <p className="text-black  ml-12 pt-2 text-2xl pb-12">
           <ol className="list-disc list-inside">
             <li>Cadrage</li>
             <li>Identification des sources et émissions </li>
@@ -59,8 +59,9 @@ export default function Expertise() {
             <li>Publication</li>
           </ol>
         </p>
-        <p className="text-009999 font-bold ml-12 pt-6 text-2xl">
-          Construction de votre stratégie bas-carbone{" "} (il me manque l image du doc)
+        {/* <p className="text-black font-bold ml-12 pt-6 text-2xl">
+          Construction de votre stratégie bas-carbone (il me manque l image du
+          doc)
         </p>
         <Image
           className="ml-12 pt-5 sm:mx-auto"
@@ -69,7 +70,7 @@ export default function Expertise() {
           width={1000}
           height={200}
         />
-        <p className="text-009999 font-bold ml-12 pt-6 text-2xl">
+        <p className="text-black font-bold ml-12 pt-6 text-2xl">
           Calcul de vos émissions évitées{" "}
         </p>
         <Image
@@ -78,7 +79,7 @@ export default function Expertise() {
           alt="calcul émissions"
           width={1000}
           height={200}
-        />
+        /> */}
         <button className="ml-12 pt-2 bg-009999 border rounded-md p-2">
           <Link href="/contact" className="uppercase text-white">
             être recontacté{" "}

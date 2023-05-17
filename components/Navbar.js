@@ -184,7 +184,7 @@ export default function Navbar() {
                                       "block px-2 py-2"
                                     )}
                                   >
-                                    <p className="text-009999">Energie climat en 5 graphiques </p>
+                                    <p className="text-009999">Energie climat en 6 graphiques </p>
                                   </Link>
                                 )}
                               </Menu.Item>
