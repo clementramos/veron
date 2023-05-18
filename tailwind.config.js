@@ -24,8 +24,14 @@ module.exports = {
       screens: {
         '2xl': {'max': '1535px'},
         // => @media (max-width: 1535px) { ... }
+        'tablet': {'min': '768px', 'max': '1023px'},
   
-        'laptop': {'min': '1023px'},
+        'laptop': {'min': '1024px', 'max': '1440px'},
+
+        'laptopL': {'min': '1440px', 'max': '2560px'},
+
+        'laptop4K': {'min': '2560px'},
+
   
         'xl': {'max': '1279px'},
         // => @media (max-width: 1279px) { ... }

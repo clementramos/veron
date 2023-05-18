@@ -16,18 +16,18 @@ export default function Expertise() {
       <Navbar />
       <div
         id="moi"
-        className="selection:bg-009999 selection:text-white pb-5 pt-10 sm:pt-5 h-screen sm:h-fit bg-white"
+        className="selection:bg-009999 selection:text-white pb-5 pt-10 sm:pt-5 h-screen sm:h-fit tablet:h-fit bg-white"
       >
-        <div className="grid grid-cols-2 sm:grid sm:grid-cols-1">
+        <div className="grid grid-cols-2 sm:grid sm:grid-cols-1 tablet:grid tablet:grid-cols-1">
           <Image
             src="/IMG-20230512-WA0045.jpg"
             alt="victor"
             width={500}
             height={600}
-            className="sm:hidden mx-auto my-auto rounded-xl sm:px-5 hover:scale-125 transition-all transform duration-500"
+            className="mx-auto my-auto sm:px-12 rounded-xl sm:px-5 laptop:hover:scale-125 transition-all transform duration-500"
             loading="eager"
           />
-          <div className="sm:pl-12 sm:pt-12 laptop:m-auto laptop:mr-48">
+          <div className="sm:px-12 sm:pt-12 laptop:m-auto laptop:mr-48 tablet:p-12">
             <p className="text-009999 text-left text-[3rem] sm:text-xl sm:w-full sm:pr-5 sm:text-left uppercase font-bold tracking-wide">
               Qui suis-je ?
             </p>{" "}

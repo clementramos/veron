@@ -44,7 +44,7 @@ export default function Hero() {
           },
         }}
       >
-        <div className="sm:h-fit w-full h-full bg-ocean bg-no-repeat flex items-center justify-center">
+        <div className="sm:h-full tablet:h-full laptop:h-full w-full h-full bg-ocean bg-no-repeat flex items-center justify-center">
           <div className="text-center sm:w-full">
             <div className="w-screen bg-white">
               <Image
@@ -54,10 +54,10 @@ export default function Hero() {
                 height={18}
                 alt="logo"
               />
-              <p className="selection:bg-009999 selection:text-white text-009999 text-center text-[9rem] sm:text-5xl sm:w-full sm:pb-5 sm:pt-12 sm:text-center uppercase font-bold tracking-wide">
+              <p className="selection:bg-009999 selection:text-white text-009999 text-center text-[9rem] sm:text-5xl sm:w-full sm:pb-5 sm:pt-12 sm:text-center tablet:text-5xl tablet:pb-10 laptop:text-6xl uppercase font-bold tracking-wide">
                 un & demi{" "}
               </p>{" "}
-              <p className="selection:bg-009999 selection:text-white text-black text-center text-4xl sm:text-3xl font-light uppercase pb-12">
+              <p className="selection:bg-009999 selection:text-white text-black text-center text-4xl tablet:text-3xl sm:text-xl laptop:text-2xl laptop:pb-14 sm:pb-6 font-light uppercase pb-12">
                 pédagogie et enthousiasme climatique.{" "}
               </p>{" "}
               <button class="bg-transparent pt-12">
@@ -73,18 +73,18 @@ export default function Hero() {
             </div>
             <div
               id="scroll"
-              className="h-screen sm:grid sm:grid-cols-1 grid grid-cols-3 gap-2"
+              className="h-screen tablet:h-full laptop:h-full sm:h-full sm:pb-10 sm:grid sm:grid-cols-1 grid grid-cols-3 gap-2"
             >
-              <div className="px-12 col-span-2">
-                <p className="text-009999 text-left text-[3rem] sm:text-xl sm:w-full sm:pr-5 sm:text-left pt-12 uppercase font-bold tracking-wide">
+              <div className="px-12 col-span-2 tablet:col-span-3 laptop:col-span-3">
+                <p className="text-009999 text-left text-[3rem] tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left pt-12 uppercase font-bold tracking-wide">
                   Pourquoi transitionner ? <br></br> Les arguments de la
                   transition{" "}
                 </p>{" "}
               </div>
-              <div></div>
-              <div></div>
-              <div className="px-12 col-span-2">
-                <p className="text-white text-left text-2xl text-justify sm:text-lg sm:pt-5 pt-48">
+              <div className="tablet:hidden laptop:hidden"></div>
+              <div className="tablet:hidden laptop:hidden"></div>
+              <div className="px-12 col-span-2 tablet:col-span-3">
+                <p className="text-white text-left text-2xl text-justify sm:text-lg sm:pt-5 pt-48 tablet:pt-12 tablet:pb-12 laptop:pb-12 laptop:pt-12">
                   <p>
                     <b>Ressources</b> : améliorer votre résilience face à
                     l&apos;augmentation des coûts et des difficultés
@@ -126,21 +126,21 @@ export default function Hero() {
           </div>{" "}
         </div>{" "}
       </motion.div>
-      <div id="info" className="h-screen bg-white sm:grid sm:grid-cols-1">
-        <div className="px-12">
-          <p className="text-009999 text-center text-[3rem] sm:text-xl sm:w-full sm:pr-5 sm:text-left pt-12 uppercase font-bold tracking-wide">
+      <div id="info" className="h-screen sm:h-full sm:pb-10 tablet:h-full laptop:h-full bg-white sm:grid sm:grid-cols-1">
+        <div className="px-12 tablet:px-12">
+          <p className="text-009999 text-center text-[3rem] tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left laptop:text-left pt-12 uppercase font-bold tracking-wide">
             UN&DEMI est un cabinet de conseil indépendant.
           </p>{" "}
-          <p className="text-009999 text-center text-xl sm:text-xl sm:w-full sm:pr-5 sm:text-left font-bold tracking-wide">
+          <p className="text-009999 text-center text-xl sm:text-sm sm:w-full sm:pr-5 sm:text-left tablet:font-thin tablet:text-left laptop:text-left sm:font-thin font-bold tracking-wide">
             Partenaire privilégié, il accompagne votre organisation dans la
             transition bas-carbone et l&apos;adaptation à la dérive climatique.
             <br></br> Nous vous proposons une approche basée sur les trois
             piliers qui fondent notre identité :
           </p>
-          <p className="text-black text-justify pb-12 pt-20 text-2xl">
+          <p className="text-black text-justify pb-12 pt-20 text-2xl sm:text-lg">
             <ol className="list-none list-inside">
               <li className="">
-                <b className="uppercase text-009999">La pédagogie.</b> <br></br>
+                <b className="uppercase text-009999 sm:text-xl">La pédagogie.</b> <br></br>
                 Le sujet énergie-climat est tentaculaire et complexe. Nous vous
                 transmettons les bons ordres de grandeurs vous permettant de
                 structurer et de clarifier le phénomène énergie climat dans
@@ -150,7 +150,7 @@ export default function Hero() {
                 la bonne marche d&apos;un projet de cette nature.{" "}
               </li>
               <li className="pt-5">
-                <b className="uppercase text-009999">La Physique.</b>
+                <b className="uppercase text-009999 sm:text-xl">La Physique.</b>
                 <br></br> Ensemble nous ferons de la physique élémentaire :
                 proportions, additions et autres conversions seront nos
                 meilleurs alliés. Retour à l&apos;école ! Le problème est
@@ -160,7 +160,7 @@ export default function Hero() {
                 passagers.km{" "}
               </li>
               <li className="pt-5">
-                <b className="uppercase text-009999">
+                <b className="uppercase text-009999 sm:text-xl">
                   De l&apos;enthousiasme à l&apos;action.
                 </b>{" "}
                 <br></br>
@@ -186,15 +186,15 @@ export default function Hero() {
       </div>{" "}
       <div
         id="articles"
-        className="selection:bg-009999 selection:text-white bg-white sm:pt-2 pt-12 sm:h-fit h-screen"
+        className="selection:bg-009999 selection:text-white bg-white sm:pt-2 pt-12 sm:h-fit h-screen laptop:h-full"
       >
         <div className="grid grid-row-2 sm:grid sm:grid-cols-1">
           <div className="pl-12 pr-12">
-            <p className="text-009999 text-center text-[3rem] sm:text-xl sm:w-full sm:pr-5 sm:text-left uppercase font-bold tracking-wide">
+            <p className="text-009999 text-center text-[3rem] sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left tablet:text-4xl tablet:pt-24 laptop:text-left laptop:pt-24 uppercase font-bold tracking-wide">
               articles à lire pour mieux comprendre les enjeux de la transition
               énergétique et climatique{" "}
             </p>{" "}
-            <p className="text-black text-center text-xl sm:hidden sm:pr-5 pt-5 px-64">
+            <p className="text-black text-center text-xl sm:hidden sm:pr-5 tablet:text-left laptop:text-left laptop:px-0 pt-5 px-64 tablet:px-0">
               La transition énergétique et climatique est un sujet
               d&apos;actualité majeur. <br />
               Pour mieux comprendre les enjeux qui y sont liés, il est important
@@ -203,7 +203,7 @@ export default function Hero() {
             </p>
           </div>
         </div>{" "}
-        <div class="pt-12 pb-12 bg-white flex justify-center items-center sm:grid sm:grid-cols-1 sm:pt-2">
+        <div class="pt-12 pb-12 sm:pb-0 bg-white flex justify-center items-center sm:grid sm:grid-cols-1 sm:pt-2">
           <Link href="/histoire-energie-climat">
             <div class="w-64 sm:w-fit sm:m-6 p-6 mx-10 bg-white rounded-xl shadow-xl hover:scale-105 transition-all transform duration-500">
               <Image
@@ -371,24 +371,24 @@ export default function Hero() {
       </div>{" "}
       <div
         id="contact"
-        className="selection:bg-009999 selection:text-white bg-white h-fit pb-24"
+        className="selection:bg-009999 selection:text-white bg-white h-fit sm:pt-10 pb-24 pt-24"
       >
         <div className="grid grid-row-2 sm:grid sm:grid-cols-1">
           <div className="pl-12 pr-12">
-            <p className="text-009999 text-center text-[3rem] sm:pt-12 sm:text-xl sm:w-full sm:pr-5 sm:text-left uppercase font-bold tracking-wide">
+            <p className="text-009999 text-center text-[3rem] tablet:text-4xl tablet:text-left sm:pt-12 sm:text-xl sm:w-full sm:pr-5 sm:text-left laptop:text-left uppercase font-bold tracking-wide">
               contactez-moi{" "}
             </p>{" "}
-            <p className="text-black text-center sm:text-left text-xl sm:text-lg sm:pt-5 pt-5 laptop:px-64">
+            <p className="text-black text-center sm:text-left text-xl tablet:text-left sm:text-lg sm:pt-5 pt-5 laptop:text-left">
               Pour toute question sur UN&DEMI, ou pour une demande concernant un
               accompagnement particulier, contactez-nous.
             </p>
           </div>
         </div>{" "}
-        <div className="text-center sm:text-left sm:pl-12 pt-12">
+        <div className="text-center sm:text-left tablet:text-left laptop:text-left laptop:pl-12 tablet:pl-12 sm:pl-12 pt-12">
           <button className="bg-009999 border rounded-md p-2">
-            <a href="" className="uppercase text-white">
+            <Link href="/contact" className="uppercase text-white">
               Nous contacter{" "}
-            </a>{" "}
+            </Link>{" "}
           </button>
         </div>
       </div>{" "}

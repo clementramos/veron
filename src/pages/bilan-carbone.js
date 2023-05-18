@@ -19,7 +19,7 @@ export default function Expertise() {
           Calcul de votre Bilan Carbone®
         </p>
         <Image
-          className="mx-auto pb-10"
+          className="mx-auto pb-10 "
           src="/logo-bilan-carbone-final.png"
           alt="bilan carbone - logo"
           width={1000}

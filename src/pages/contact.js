@@ -101,7 +101,7 @@ export default function Contact() {
           </button>
         </div>
         <div className="h-full bg-white">
-          <p className="text-009999 text-[7rem] sm:text-6xl sm:pt-12 text-center font-bold">
+          <p className="text-009999 text-[7rem] sm:text-6xl sm:pt-12 text-center font-bold tracking-wide tablet:text-6xl">
             Contact
           </p>
           {/* <div className="grid grid-cols-6">
@@ -114,7 +114,7 @@ export default function Contact() {
           </div> */}
 
           <div className="pt-16 flex flex-col items-center bg-white h-screen">
-            <div className="bg-white shadow-2xl rounded w-1/2 p-10">
+            <div className="bg-white shadow-2xl rounded w-1/2 p-10 tablet:w-3/4 sm:w-full sm:px-5 sm:w-5/6">
               {!isSubmitted ? (
                 <>
                   <form onSubmit={handleSubmit((data) => submitForm(data))}>
