@@ -25,7 +25,7 @@ export default function Navbar() {
           <>
             <div className="mx-auto px-2 pb-5 sm:px-6 laptop:items-center shadow-sm">
               <div className="relative flex h-fit items-center justify-between">
-                <div className="absolute inset-y-0 right-0 flex items-center laptop:hidden">
+                <div className="absolute inset-y-0 right-0 flex items-center laptopL:hidden laptop:hidden">
                   {/* Mobile menu button*/}
                   <Disclosure.Button className="inline-flex items-end justify-end rounded-md p-2 text-009999 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-009999">
                     <span className="sr-only">Open main menu</span>
@@ -258,18 +258,14 @@ export default function Navbar() {
                             </Menu.Items>
                           </Transition>
                         </Menu>
-                        <Menu
-                          as="div"
-                          className="relative ml-3 pr-5 w-64 laptop:w-fit"
-                        >
+                        
                           <div>
-                            <Menu.Button className="flex rounded-full bg-white text-sm">
+                            <Link href="/qui-suis-je">
                               <p className="text-009999 font-thin hover:bg-white hover:text-black px-3 py-2 rounded-md text-xl font-medium">
                                 QUI SUIS-JE ?
                               </p>
-                            </Menu.Button>
+                              </Link>
                           </div>
-                        </Menu>
 
                         {/* {navigation.map((item) => (
                           <a
@@ -478,9 +474,11 @@ export default function Navbar() {
                 <Menu as="div" className="relative">
                   <div>
                     <Menu.Button className="flex rounded-full bg-white text-sm mx-auto ">
+                      <Link href="/qui-suis-je">
                       <p className="text-009999 hover:bg-white hover:text-black px-3 py-2 rounded-md font-medium text-base">
                         QUI SUIS-JE ?
                       </p>
+                      </Link>
                     </Menu.Button>
                   </div>
                 </Menu>

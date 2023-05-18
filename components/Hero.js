@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <>
       {" "}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: "-100px" }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -27,9 +27,9 @@ export default function Hero() {
             restDelta: 0.001,
           },
         }}
-      >
+      > */}
         <Navbar />
-      </motion.div>
+      {/* </motion.div>
       <motion.div
         initial={{ opacity: 0, y: "900px" }}
         animate={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ export default function Hero() {
             restDelta: 0.001,
           },
         }}
-      >
+      > */}
         <div className="sm:h-full tablet:h-full laptop:h-full w-full h-full bg-ocean bg-no-repeat flex items-center justify-center">
           <div className="text-center sm:w-full">
             <div className="w-screen bg-white">
@@ -53,6 +53,7 @@ export default function Hero() {
                 width={300}
                 height={18}
                 alt="logo"
+                priority="true"
               />
               <p className="selection:bg-009999 selection:text-white text-009999 text-center text-[9rem] sm:text-5xl sm:w-full sm:pb-5 sm:pt-12 sm:text-center tablet:text-5xl tablet:pb-10 laptop:text-6xl uppercase font-bold tracking-wide">
                 un & demi{" "}
@@ -125,7 +126,7 @@ export default function Hero() {
             </div>{" "}
           </div>{" "}
         </div>{" "}
-      </motion.div>
+      {/* </motion.div> */}
       <div id="info" className="h-screen sm:h-full sm:pb-10 tablet:h-full laptop:h-full bg-white sm:grid sm:grid-cols-1">
         <div className="px-12 tablet:px-12">
           <p className="text-009999 text-center text-[3rem] tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left laptop:text-left pt-12 uppercase font-bold tracking-wide">
