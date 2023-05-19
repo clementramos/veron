@@ -20,6 +20,8 @@ module.exports = {
     
       colors: {
         '009999' : '#009999',
+        '00FFFF' : '#00FFFF',
+        '00CCCC' : '#00CCCC',
       },
       screens: {
         '2xl': {'max': '1535px'},

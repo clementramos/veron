@@ -29,8 +29,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="" class="hover:underline">
-                  LISTE 3
+                <Link href="/test" class="hover:underline">
+                  Page de tests
                 </Link>
               </li>
             </ul>
