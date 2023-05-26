@@ -9,7 +9,6 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import {
   motion,
-  useSpring,
   useTransform,
   MotionValue,
   useAnimation,
