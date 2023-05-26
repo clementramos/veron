@@ -76,8 +76,11 @@ export default function App() {
         initial="hidden"
         animate={control}
       >
-        <h1>Je peux me servir de ça pour la partie : <br></br>&quot;UN&DEMI vous accompagne à chaque étape de la mise en place de
-                votre stratégie énergie-climat:&quot;</h1>
+        <h1>
+          Je peux me servir de ça pour la partie : <br></br>&quot;UN&DEMI vous
+          accompagne à chaque étape de la mise en place de votre stratégie
+          énergie-climat:&quot;
+        </h1>
       </motion.div>
     );
   };
@@ -175,50 +178,51 @@ export default function App() {
           <div className="h-fit w-full flex justify-center items-center pt-12 pb-5">
             <div className="w-[400px] h-[400px] bg-white mx-auto rounded-xl flex justify-center items-center border border-lg border-009999">
               <div className="text-2xl text-center">
-                <Box/>
+                <Box />
               </div>
             </div>
           </div>
           <div className="h-fit w-full flex justify-center items-center pt-12 pb-5">
             <div className="w-[400px] h-[400px] bg-white mx-auto rounded-xl flex justify-center items-center border border-lg border-009999">
               <div className="text-2xl text-center">
-                <Box1/>
+                <Box1 />
               </div>
+            </div>
+          </div>
+          <p className="text-center pb-5">EXIT ANIMATIONS TESTING</p>
+          <div
+            classname="h-fit w-full flex justify-center items-center pt-12 pb-5"
+            key="a box"
+          >
+            <h1 className="text-center pb-5">Animation de sortie :</h1>
+            <div className="w-full h-[400px] bg-white mx-auto rounded-xl flex justify-center items-center border border-lg border-009999">
+              <button onClick={() => setShow(!show)} className="text-left text-2xl">
+                {show ? "Sortie" : "Entrée"}
+              </button>
+              <AnimatePresence>
+                {show && (
+                  <motion.div
+                    //Note that the AnimatePresence component requires a key prop to identify the choice element in the React component tree
+                    key="a box"
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={{ opacity: 1, x: 100 }}
+                    //Specified Exit animation
+                    exit={{ opacity: 0, x: -150 }}
+                    style={{
+                      height: "140px",
+                      width: "140px",
+                      background: "#009999",
+                      position: "relative",
+                    }}
+                  ></motion.div>
+                )}
+              </AnimatePresence>
             </div>
           </div>
         </div>
       </div>
+
       <Footer />
     </>
-    // EXIT ANIMATIONS TESTING
-    // <div classname="h-screen" key="a box">
-    //   <h1 style={{ position: "relative", marginTop: "200px" }}>
-    //     Example exit animation with a Box
-    //   </h1>
-    //   <AnimatePresence>
-    //     {show && (
-    //       <motion.div
-    //         //Note that the AnimatePresence component requires a key prop to identify the choice element in the React component tree
-    //         key="a box"
-    //         initial={{ opacity: 0, x: 50 }}
-    //         animate={{ opacity: 1, x: 100 }}
-    //         //Specified Exit animation
-    //         exit={{ opacity: 0, x: -150 }}
-    //         style={{
-    //           height: "140px",
-    //           width: "140px",
-    //           background: "blue",
-    //           position: "relative",
-    //         }}
-    //       ></motion.div>
-    //     )}
-    //   </AnimatePresence>
-    //   <button
-    //     onClick={() => setShow(!show)}
-    //     style={{ padding: "15px 24px", fontSize: "22px" }}
-    //   >
-    //     {show ? "Remove Cube" : "Add Cube"}
-    //   </button>
-    // </div>
   );
 }

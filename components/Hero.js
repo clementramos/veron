@@ -1,6 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import {
@@ -12,6 +16,8 @@ import {
   useAnimation,
 } from "framer-motion";
 import Navbar from "./Navbar";
+import "swiper/css";
+import "swiper/css/navigation";
 
 export default function Hero() {
   const boxVariant = {
@@ -76,63 +82,236 @@ export default function Hero() {
           },
         }}
       > */}
-      <div className="sm:h-full tablet:h-full laptop:h-full w-full h-full bg-ocean bg-no-repeat flex items-center justify-center">
-        <div className="text-center sm:w-full">
-          <div className="w-screen bg-white">
+      {/* <div className="sm:h-full tablet:h-full laptop:h-full w-full h-full bg-ocean bg-no-repeat flex items-center justify-center"> */}
+      {/* <div className="text-center sm:w-full"> */}
+      <div className="w-screen text-center h-screen bg-white">
+        <Image
+          className="mx-auto"
+          src="/Flyer Un&Demi.png"
+          width={300}
+          height={18}
+          alt="logo"
+          priority="true"
+        />
+        <p className="selection:bg-009999 selection:text-white text-009999 text-center text-[9rem] sm:text-5xl sm:w-full sm:pb-5 sm:pt-12 sm:text-center tablet:text-5xl tablet:pb-10 laptop:text-6xl uppercase font-bold tracking-wide">
+          un & demi{" "}
+        </p>{" "}
+        <p className="selection:bg-009999 selection:text-white text-black text-center text-4xl tablet:text-3xl sm:text-xl laptop:text-2xl laptop:pb-14 sm:pb-6 font-light uppercase pb-12">
+          pédagogie et enthousiasme climatique.{" "}
+        </p>{" "}
+        <button class="bg-transparent pt-12">
+          <Link href="#presentation" className="uppercase" scroll={false}>
             <Image
-              className="mx-auto"
-              src="/Flyer Un&Demi.png"
-              width={300}
-              height={18}
-              alt="logo"
-              priority="true"
-            />
-            <p className="selection:bg-009999 selection:text-white text-009999 text-center text-[9rem] sm:text-5xl sm:w-full sm:pb-5 sm:pt-12 sm:text-center tablet:text-5xl tablet:pb-10 laptop:text-6xl uppercase font-bold tracking-wide">
-              un & demi{" "}
-            </p>{" "}
-            <p className="selection:bg-009999 selection:text-white text-black text-center text-4xl tablet:text-3xl sm:text-xl laptop:text-2xl laptop:pb-14 sm:pb-6 font-light uppercase pb-12">
-              pédagogie et enthousiasme climatique.{" "}
-            </p>{" "}
-            <button class="bg-transparent pt-12">
-              <Link href="#scroll" className="uppercase" scroll={false}>
-                <Image
-                  src="/arrow_down.svg"
-                  alt="arrow down"
-                  width={100}
-                  height={100}
-                />{" "}
+              src="/arrow_down.svg"
+              alt="arrow down"
+              width={100}
+              height={100}
+            />{" "}
+          </Link>{" "}
+        </button>{" "}
+      </div>
+      <div
+        id="presentation"
+        className="h-full sm:h-full sm:pb-10 tablet:h-full laptop:h-full bg-white sm:grid sm:grid-cols-1"
+      >
+        <Fade bottom duration={2000} when={true} appear>
+          <div className="px-12 tablet:px-12 ">
+            <Fade top>
+              <p className="text-009999 text-center text-[3rem] tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left laptop:text-left pt-12 uppercase font-bold tracking-wide">
+                UN&DEMI est un cabinet de conseil indépendant.
+              </p>{" "}
+            </Fade>
+            <p className="text-009999 text-center text-xl sm:text-sm sm:w-full sm:pr-5 sm:text-left tablet:font-thin tablet:text-left laptop:text-left sm:font-thin font-bold tracking-wide">
+              Partenaire privilégié, il accompagne votre organisation dans la
+              transition bas-carbone et l&apos;adaptation à la dérive
+              climatique.
+              <br></br> Nous vous proposons une approche basée sur les trois
+              piliers qui fondent notre identité :
+            </p>
+            <p className="text-black text-justify pb-12 pt-20 text-2xl sm:text-lg">
+              <ol className="list-none list-inside">
+                <li className="">
+                  <b className="uppercase text-009999 sm:text-xl">
+                    La pédagogie.
+                  </b>{" "}
+                  <br></br>
+                  Le sujet énergie-climat est tentaculaire et complexe. Nous
+                  vous transmettons les bons ordres de grandeurs vous permettant
+                  de structurer et de clarifier le phénomène énergie climat dans
+                  votre esprit. L&apos;objectif : vous approprier le sujet et
+                  devenir un acteur convaincu de votre propre transition. Le
+                  tout, accompagné de la rigueur et de la bienveillance
+                  indispensables à la bonne marche d&apos;un projet de cette
+                  nature.{" "}
+                </li>
+                <li className="pt-5">
+                  <b className="uppercase text-009999 sm:text-xl">
+                    La Physique.
+                  </b>
+                  <br></br> Ensemble nous ferons de la physique élémentaire :
+                  proportions, additions et autres conversions seront nos
+                  meilleurs alliés. Retour à l&apos;école ! Le problème est
+                  physique il se résoudra donc en raisonnant dans le même cadre.
+                  Nous manipulerons des Kg, des tonnes, des kWh mais aussi des
+                  unités plus exotiques comme des tonnes.km ou encore des
+                  passagers.km{" "}
+                </li>
+                <li className="pt-5">
+                  <b className="uppercase text-009999 sm:text-xl">
+                    De l&apos;enthousiasme à l&apos;action.
+                  </b>{" "}
+                  <br></br>
+                  Le changement climatique et la fin de l&apos;abondance
+                  énergétique ont et auront des conséquences qui touchent
+                  directement à nos existences. En cela, ces sujets sont
+                  anxiogènes. Il est indispensable selon nous de les aborder
+                  avec enthousiasme et positivité. Le défi est colossal mais il
+                  s&apos;agit également d&apos;une chance inédite dans
+                  l&apos;histoire de l&apos;être humain de réinventer ses
+                  méthodes de subsistances et d&apos;accès au bonheur. « Je ne
+                  suis pas complètement sûre » que nous serions moins heureux
+                  dans une société sobre et résiliente.{" "}
+                </li>
+              </ol>
+            </p>
+            <button className="bg-009999 border rounded-md p-2 mb-12">
+              <Link href="/expertise" className="uppercase text-white">
+                Découvrez nos champs d&apos;expertise{" "}
               </Link>{" "}
-            </button>{" "}
-          </div>
-          <div
-            id="scroll"
-            className="h-screen tablet:h-full laptop:h-full sm:h-screen sm:pb-10 sm:grid sm:grid-cols-1"
-          >
-            <div className="px-12 tablet:col-span-3 laptop:col-span-3">
+            </button>
+            <Swiper
+              navigation={true}
+              modules={[Navigation]}
+              className="w-auto h-fit"
+            >
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/hemisphère-nord-temperature-an-0.jpg"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                  className=""
+                />
+                1
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/hemisphère-nord-temperature-an-0.jpg"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                2
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/hemisphère-nord-temperature-an-0.jpg"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                3
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/hemisphère-nord-temperature-an-0.jpg"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                4
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/hemisphère-nord-temperature-an-0.jpg"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                5
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/hemisphère-nord-temperature-an-0.jpg"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                6
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/hemisphère-nord-temperature-an-0.jpg"
+                  width={300}
+                  height={300}
+                  alt="article"
+                />
+                7
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/hemisphère-nord-temperature-an-0.jpg"
+                  width={300}
+                  height={300}
+                  alt="article"
+                />
+                8
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/hemisphère-nord-temperature-an-0.jpg"
+                  width={300}
+                  height={300}
+                  alt="article"
+                />
+                9
+              </SwiperSlide>
+            </Swiper>
+          </div>{" "}
+        </Fade>
+      </div>{" "}
+      <div
+        id="scroll"
+        className="h-screen tablet:h-full laptop:h-full sm:h-screen sm:pb-10 sm:grid sm:grid-cols-1 bg-white"
+      >
+        <Fade bottom duration={2000} when={true} appear>
+          <div className="px-12 tablet:col-span-3 laptop:col-span-3">
+            <Fade top>
               <p className="text-009999 text-left text-[3rem] tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left pt-12 uppercase font-bold tracking-wide">
                 UN&DEMI vous accompagne à chaque étape de la mise en place de
                 votre stratégie énergie-climat:
               </p>{" "}
-            </div>
-            <div className="px-12 tablet:col-span-3">
-              <p className="text-white text-left text-2xl text-justify sm:text-lg sm:pt-5 pt-10 tablet:pt-12 tablet:pb-12 laptop:pb-12 laptop:pt-12">
-                <p>Sensibilisation et formation de l&apos;équipe dédiée</p>
-                <p className="pt-5">
-                  Mesures physiques (Bilan CarboneÒ, ACV, émissions évitées)
-                </p>
-                <p className="pt-5">
-                  Construction de votre feuille de route, plan d&apos;actions
-                </p>
-                <p className="pt-5">
-                  Stratégie et trajectoire de réduction d&apos;émissions (SNBC,
-                  QuantiGES, ACT, SBT…)
-                </p>
-                <p className="pt-5"> Communication (rédaction de contenu)</p>
-              </p>{" "}
-            </div>{" "}
+            </Fade>
+          </div>
+          <div className="px-12 tablet:col-span-3">
+            <p className="text-black text-left text-2xl text-justify sm:text-lg sm:pt-5 pt-10 tablet:pt-12 tablet:pb-12 laptop:pb-12 laptop:pt-12">
+              <p>Sensibilisation et formation de l&apos;équipe dédiée</p>
+              <p className="pt-5">
+                Mesures physiques (Bilan CarboneÒ, ACV, émissions évitées)
+              </p>
+              <p className="pt-5">
+                Construction de votre feuille de route, plan d&apos;actions
+              </p>
+              <p className="pt-5">
+                Stratégie et trajectoire de réduction d&apos;émissions (SNBC,
+                QuantiGES, ACT, SBT…)
+              </p>
+              <p className="pt-5"> Communication (rédaction de contenu)</p>
+            </p>{" "}
           </div>{" "}
-        </div>{" "}
+        </Fade>
       </div>{" "}
+      {/* </div>{" "} */}
+      {/* </div>{" "} */}
       {/* </motion.div> */}
       <div
         id="info"

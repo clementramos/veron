@@ -86,7 +86,7 @@ export default function Navbar() {
                           <div>
                             <Menu.Button className="flex rounded-full bg-white text-sm mx-auto">
                               <p className="text-009999 font-thin hover:bg-white hover:text-black px-3 py-2 rounded-md text-xl font-medium">
-                                EXPERTISE
+                                EXPERTISES
                               </p>
                             </Menu.Button>
                           </div>
@@ -110,7 +110,7 @@ export default function Navbar() {
                                     )}
                                   >
                                     <p className="text-009999">
-                                      Sensibilisation et formation (FDC){" "}
+                                      Sensibilisation et formation{" "}
                                     </p>
                                   </Link>
                                 )}
@@ -139,7 +139,9 @@ export default function Navbar() {
                                       "block px-2 py-2"
                                     )}
                                   >
-                                    <p className="text-009999">ACV </p>
+                                    <p className="text-009999">
+                                      Analyse de cycle de vie{" "}
+                                    </p>
                                   </Link>
                                 )}
                               </Menu.Item>
@@ -198,6 +200,21 @@ export default function Navbar() {
                               <Menu.Item>
                                 {({ active }) => (
                                   <Link
+                                    href="/kaya"
+                                    className={classNames(
+                                      active ? "bg-gray-100" : "",
+                                      "block px-2 py-2"
+                                    )}
+                                  >
+                                    <p className="text-009999">
+                                      Les infographies qui percutent
+                                    </p>
+                                  </Link>
+                                )}
+                              </Menu.Item>
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <Link
                                     href="/graphiques"
                                     className={classNames(
                                       active ? "bg-gray-100" : "",
@@ -206,21 +223,6 @@ export default function Navbar() {
                                   >
                                     <p className="text-009999">
                                       Energie climat en 6 graphiques{" "}
-                                    </p>
-                                  </Link>
-                                )}
-                              </Menu.Item>
-                              <Menu.Item>
-                                {({ active }) => (
-                                  <Link
-                                    href="/kaya"
-                                    className={classNames(
-                                      active ? "bg-gray-100" : "",
-                                      "block px-2 py-2"
-                                    )}
-                                  >
-                                    <p className="text-009999">
-                                      L&apos;équation de Kaya
                                     </p>
                                   </Link>
                                 )}
@@ -250,7 +252,7 @@ export default function Navbar() {
                                     )}
                                   >
                                     <p className="text-009999">
-                                      Les infographies qui percutent
+                                      L&apos;équation de Kaya
                                     </p>
                                   </Link>
                                 )}
@@ -258,14 +260,14 @@ export default function Navbar() {
                             </Menu.Items>
                           </Transition>
                         </Menu>
-                        
-                          <div>
-                            <Link href="/qui-suis-je">
-                              <p className="text-009999 font-thin hover:bg-white hover:text-black px-3 py-2 rounded-md text-xl font-medium">
-                                QUI SUIS-JE ?
-                              </p>
-                              </Link>
-                          </div>
+
+                        <div>
+                          <Link href="/qui-suis-je">
+                            <p className="text-009999 font-thin hover:bg-white hover:text-black px-3 py-2 rounded-md text-xl font-medium">
+                              QUI SUIS-JE ?
+                            </p>
+                          </Link>
+                        </div>
 
                         {/* {navigation.map((item) => (
                           <a
@@ -475,9 +477,9 @@ export default function Navbar() {
                   <div>
                     <Menu.Button className="flex rounded-full bg-white text-sm mx-auto ">
                       <Link href="/qui-suis-je">
-                      <p className="text-009999 hover:bg-white hover:text-black px-3 py-2 rounded-md font-medium text-base">
-                        QUI SUIS-JE ?
-                      </p>
+                        <p className="text-009999 hover:bg-white hover:text-black px-3 py-2 rounded-md font-medium text-base">
+                          QUI SUIS-JE ?
+                        </p>
                       </Link>
                     </Menu.Button>
                   </div>
