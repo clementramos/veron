@@ -179,15 +179,15 @@ export default function Hero() {
                 Découvrez nos champs d&apos;expertise{" "}
               </Link>{" "}
             </button>
-            <Swiper
+            {/* <Swiper
               navigation={true}
               modules={[Navigation]}
-              className="w-auto h-fit"
+              className="w-1/2 h-auto"
             >
               <SwiperSlide>
                 {" "}
                 <Image
-                  src="/hemisphère-nord-temperature-an-0.jpg"
+                  src="/Illustrations/pédagogie.jfif"
                   width={1000}
                   height={1000}
                   alt="article"
@@ -198,7 +198,7 @@ export default function Hero() {
               <SwiperSlide>
                 {" "}
                 <Image
-                  src="/hemisphère-nord-temperature-an-0.jpg"
+                  src="/Illustrations/salle de classe blanc.jpg"
                   width={1000}
                   height={1000}
                   alt="article"
@@ -208,7 +208,7 @@ export default function Hero() {
               <SwiperSlide>
                 {" "}
                 <Image
-                  src="/hemisphère-nord-temperature-an-0.jpg"
+                  src="/Illustrations/physique.jpg"
                   width={1000}
                   height={1000}
                   alt="article"
@@ -218,64 +218,14 @@ export default function Hero() {
               <SwiperSlide>
                 {" "}
                 <Image
-                  src="/hemisphère-nord-temperature-an-0.jpg"
+                  src="/Illustrations/enthousiasme 1.jpg"
                   width={1000}
                   height={1000}
                   alt="article"
                 />
                 4
               </SwiperSlide>
-              <SwiperSlide>
-                {" "}
-                <Image
-                  src="/hemisphère-nord-temperature-an-0.jpg"
-                  width={1000}
-                  height={1000}
-                  alt="article"
-                />
-                5
-              </SwiperSlide>
-              <SwiperSlide>
-                {" "}
-                <Image
-                  src="/hemisphère-nord-temperature-an-0.jpg"
-                  width={1000}
-                  height={1000}
-                  alt="article"
-                />
-                6
-              </SwiperSlide>
-              <SwiperSlide>
-                {" "}
-                <Image
-                  src="/hemisphère-nord-temperature-an-0.jpg"
-                  width={300}
-                  height={300}
-                  alt="article"
-                />
-                7
-              </SwiperSlide>
-              <SwiperSlide>
-                {" "}
-                <Image
-                  src="/hemisphère-nord-temperature-an-0.jpg"
-                  width={300}
-                  height={300}
-                  alt="article"
-                />
-                8
-              </SwiperSlide>
-              <SwiperSlide>
-                {" "}
-                <Image
-                  src="/hemisphère-nord-temperature-an-0.jpg"
-                  width={300}
-                  height={300}
-                  alt="article"
-                />
-                9
-              </SwiperSlide>
-            </Swiper>
+            </Swiper> */}
           </div>{" "}
         </Fade>
       </div>{" "}
@@ -296,7 +246,7 @@ export default function Hero() {
             <p className="text-black text-left text-2xl text-justify sm:text-lg sm:pt-5 pt-10 tablet:pt-12 tablet:pb-12 laptop:pb-12 laptop:pt-12">
               <p>Sensibilisation et formation de l&apos;équipe dédiée</p>
               <p className="pt-5">
-                Mesures physiques (Bilan CarboneÒ, ACV, émissions évitées)
+                Mesures physiques (Bilan Carbone, ACV, émissions évitées)
               </p>
               <p className="pt-5">
                 Construction de votre feuille de route, plan d&apos;actions
