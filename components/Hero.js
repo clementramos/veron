@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import { useInView } from "react-intersection-observer";
@@ -112,13 +111,10 @@ export default function Hero() {
         id="presentation"
         className="h-full sm:h-full sm:pb-10 tablet:h-full laptop:h-full bg-white sm:grid sm:grid-cols-1"
       >
-        <Fade bottom duration={2000} when={true} appear>
           <div className="px-12 tablet:px-12 ">
-            <Fade top>
               <p className="text-009999 text-center text-[3rem] tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left laptop:text-left pt-12 uppercase font-bold tracking-wide">
                 UN&DEMI est un cabinet de conseil indépendant.
               </p>{" "}
-            </Fade>
             <p className="text-009999 text-center text-xl sm:text-sm sm:w-full sm:pr-5 sm:text-left tablet:font-thin tablet:text-left laptop:text-left sm:font-thin font-bold tracking-wide">
               Partenaire privilégié, il accompagne votre organisation dans la
               transition bas-carbone et l&apos;adaptation à la dérive
@@ -225,20 +221,16 @@ export default function Hero() {
               </SwiperSlide>
             </Swiper> */}
           </div>{" "}
-        </Fade>
       </div>{" "}
       <div
         id="scroll"
         className="h-screen tablet:h-full laptop:h-full sm:h-screen sm:pb-10 sm:grid sm:grid-cols-1 bg-white"
       >
-        <Fade bottom duration={2000} when={true} appear>
           <div className="px-12 tablet:col-span-3 laptop:col-span-3">
-            <Fade top>
               <p className="text-009999 text-left text-[3rem] tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left pt-12 uppercase font-bold tracking-wide">
                 UN&DEMI vous accompagne à chaque étape de la mise en place de
                 votre stratégie énergie-climat:
               </p>{" "}
-            </Fade>
           </div>
           <div className="px-12 tablet:col-span-3">
             <p className="text-black text-left text-2xl text-justify sm:text-lg sm:pt-5 pt-10 tablet:pt-12 tablet:pb-12 laptop:pb-12 laptop:pt-12">
@@ -256,7 +248,6 @@ export default function Hero() {
               <p className="pt-5"> Communication (rédaction de contenu)</p>
             </p>{" "}
           </div>{" "}
-        </Fade>
       </div>{" "}
       {/* </div>{" "} */}
       {/* </div>{" "} */}
