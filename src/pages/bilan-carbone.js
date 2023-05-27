@@ -80,27 +80,13 @@ export default function Expertise() {
               <li>Publication</li>
             </ol>
           </p>
-          {/* <p className="text-black font-bold ml-12 pt-6 text-2xl">
-          Construction de votre stratégie bas-carbone (il me manque l image du
-          doc)
-        </p>
-        <Image
-          className="ml-12 pt-5 sm:mx-auto"
-          src="/Empreinte carbone France 2019.png"
-          alt="stratégie bas carbone"
-          width={1000}
-          height={200}
-        />
-        <p className="text-black font-bold ml-12 pt-6 text-2xl">
-          Calcul de vos émissions évitées{" "}
-        </p>
-        <Image
-          className="ml-12 pt-5 pb-12 sm:mx-auto"
-          src="/illustration émissions évitées.png"
-          alt="calcul émissions"
-          width={1000}
-          height={200}
-        /> */}
+          <Image
+            className="ml-12 pb-10 "
+            src="/placeholder.png"
+            alt="placeholder"
+            width={1000}
+            height={200}
+          />
           <button className="ml-12 pt-2 bg-009999 border rounded-md p-2">
             <Link href="/contact" className="uppercase text-white">
               être recontacté{" "}
@@ -108,7 +94,6 @@ export default function Expertise() {
           </button>{" "}
         </motion.main>
       </div>
-
       <Footer />
     </>
   );

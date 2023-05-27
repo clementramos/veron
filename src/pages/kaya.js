@@ -37,14 +37,17 @@ export default function Expertise() {
           }}
         >
           <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12">
-            L&apos;équation de Kaya : où taper ?
+            L&apos;équation de Kaya, ou &quot;où taper &quot;?
           </p>
           <p className="text-009999 mx-12 pt-2 text-2xl">
             {" "}
             <p className="text-black  ml-2 pt-2 text-2xl">
-              L&apos;équation de Kaya nous permet d&apos;identifier les leviers
-              d&apos;actions qui permettraient la réduction des émissions de
-              GES.
+              L&apos;équation de Kaya aurait été élaborée par l&apos;économiste
+              Japonais Yoishi Kaya en 1993. Elle nous permet de relier les
+              émissions anthropiques de CO 2 à la démographie, l&apos;économie
+              et l&apos;énergie. En la manipulant, elle nous permet
+              d&apos;identifier les leviers qui permettraient la réduction des
+              émissions de CO 2 .
             </p>
             <Image
               className="ml-12 pt-12 pb-12 sm:mx-auto"

@@ -16,7 +16,7 @@ export default function Expertise() {
   return (
     <>
       <Head>
-        <title>UN&DEMI - La décarbonation : la choisir ou la subir</title>
+        <title>UN&DEMI - Pourquoi transitionner ?</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/mainlogo.svg" />
@@ -38,6 +38,7 @@ export default function Expertise() {
           <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12">
           Pourquoi transitionner? : les arguments de la transition
           </p>
+          <p className="text-009999 text-xl ml-12 mb-12">C&apos;est en prenant conscience des enjeux que le désir de passer à l&apos;action survient.</p>
           <p className="text-black mx-12 pt-2 text-2xl">
             {" "}
             <p className="text-black pt-2 text-2xl">

@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 export default function Expertise() {
   const variants = {
@@ -12,7 +17,12 @@ export default function Expertise() {
     enter: { opacity: 1, x: 0, y: 0 },
     exit: { opacity: 0, x: 0, y: -100 },
   };
-
+  const progressCircle = useRef(null);
+  const progressContent = useRef(null);
+  const onAutoplayTimeLeft = (s, time, progress) => {
+    progressCircle.current.style.setProperty("--progress", 1 - progress);
+    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+  };
   return (
     <>
       <Head>
@@ -37,7 +47,7 @@ export default function Expertise() {
           }}
         >
           <p className="text-009999 text-4xl font-bold uppercase  pt-12 mb-12">
-            Sensibilisation et formation - Enjeux climatiques
+            Sensibilisation et formation
           </p>
           <Image
             className="mx-auto pb-10"
@@ -88,10 +98,10 @@ export default function Expertise() {
             motivés et outillés pour agir à leur niveau.
           </p>
           <p className="text-black font-bold  pt-6 text-3xl">
-            Présentation académique énergie climat à la manière JMJ{" "}
+            Formation énergie climat
           </p>
           <p className="text-sm italic  pb-12 text-gray-500 text-sm">
-            1h avec présentation PowerPoint
+            Entre 1h et 2h avec présentation PowerPoint
           </p>
           <p className="text-black   pt-2 pb-12 text-2xl">
             Vous découvrirez ou redécouvrirez notre « petite » histoire
@@ -101,6 +111,94 @@ export default function Expertise() {
             entièrement interactive et collaborative dans la juste continuité de
             l&apos;atelier précédent.
           </p>
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 4500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            onAutoplayTimeLeft={onAutoplayTimeLeft}
+            className="w-1/2 h-full sm:w-full mb-12"
+          >
+            <SwiperSlide>
+              <Image
+                priority
+                src="/IMG-20230520-WA0002.jpg"
+                width={1000}
+                height={1000}
+                alt="article"
+                className=""
+              />
+              
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                priority
+                src="/IMG-20230520-WA0007.jpg"
+                width={1000}
+                height={1000}
+                alt="article"
+                className=""
+              />
+              
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                priority
+                src="/IMG-20230520-WA0009.jpg"
+                width={1000}
+                height={1000}
+                alt="article"
+                className=""
+              />
+              
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                priority
+                src="/IMG-20230521-WA0029.jpg"
+                width={1000}
+                height={1000}
+                alt="article"
+                className=""
+              />
+              
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                priority
+                src="/IMG-20230521-WA0033.jpg"
+                width={1000}
+                height={1000}
+                alt="article"
+                className=""
+              />
+              
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                priority
+                src="/IMG-20230521-WA0038.jpg"
+                width={1000}
+                height={1000}
+                alt="article"
+                className=""
+              />
+              
+            </SwiperSlide>
+            <div className="autoplay-progress" slot="container-end">
+              <svg viewBox="0 0 48 48" ref={progressCircle}>
+                <circle cx="24" cy="24" r="20"></circle>
+              </svg>
+              <span ref={progressContent}></span>
+            </div>
+          </Swiper>
           <button className=" pt-2 bg-009999 border rounded-md p-2">
             <Link href="/contact" className="uppercase text-white">
               être recontacté{" "}

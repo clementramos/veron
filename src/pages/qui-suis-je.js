@@ -27,7 +27,7 @@ export default function QuiSuisJe() {
       <Navbar />
       <div
         key="moi"
-        className="selection:bg-009999 selection:text-white pb-5 pt-10 sm:pt-5 h-screen sm:h-fit tablet:h-fit bg-white"
+        className="selection:bg-009999 selection:text-white pb-5 pt-10 sm:pt-5 h-full sm:h-full tablet:h-full laptop:h-full bg-white"
       >
         <AnimatePresence>
           {show && (
@@ -44,13 +44,13 @@ export default function QuiSuisJe() {
                 ease: [0, 0.71, 0.2, 1.01],
               }}
             >
-              <div className="grid grid-cols-2 sm:grid sm:grid-cols-1 tablet:grid tablet:grid-cols-1">
+              <div className="grid grid-cols-2 sm:grid sm:grid-cols-1 tablet:grid tablet:grid-cols-1 laptop:grid tablet:grid-cols-1">
                 <Image
                   src="/IMG-20230512-WA0045.jpg"
                   alt="victor"
                   width={500}
                   height={600}
-                  className="mx-auto my-auto sm:px-12 rounded-xl sm:px-5 laptop:hover:scale-125 transition-all transform duration-500"
+                  className="sm:hidden mx-auto my-auto sm:px-12 rounded-xl sm:px-5 laptop:hover:scale-125 transition-all transform duration-500"
                   loading="eager"
                 />
                 <div className="sm:px-12 sm:pt-12 laptop:m-auto laptop:mr-48 tablet:p-12">
@@ -85,6 +85,14 @@ export default function QuiSuisJe() {
                     climat et mes cellules grises. Hâte de vous rencontrer et
                     d&apos;accomplir de grande chose, ensemble !
                   </p>{" "}
+                  <Image
+                  src="/IMG-20230512-WA0045.jpg"
+                  alt="victor"
+                  width={500}
+                  height={600}
+                  className="laptop:hidden tablet:hidden mx-auto my-auto sm:px-12 rounded-xl sm:px-5 laptop:hover:scale-125 transition-all transform duration-500"
+                  loading="eager"
+                />
                   <button className="bg-009999 border rounded-md p-2">
                     <Link href="/contact" className="uppercase text-white">
                       En savoir plus{" "}
