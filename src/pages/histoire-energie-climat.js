@@ -5,7 +5,10 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Head from "next/head";
 import { motion } from "framer-motion";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
 export default function Expertise() {
   const variants = {
     hidden: { opacity: 0, x: 0, y: -250 },
@@ -95,6 +98,93 @@ export default function Expertise() {
                 className="mx-auto my-12"
               />
             </div>
+            <Swiper
+              navigation={true}
+              modules={[Navigation]}
+              className="w-1/2 h-auto sm:w-full mb-12 mt-12"
+            >
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/gaz 3.jpg"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                  className=""
+                />
+                Illustrations 
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/barrils de pétrole.png"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                Illustrations 
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/charbon 1.png"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                Illustrations 
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/co2 1.png"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                Illustrations 
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/incendie 2.jpg"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                Illustrations 
+              </SwiperSlide>{" "}
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/cyclone 1.jpg"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                Illustrations
+              </SwiperSlide>{" "}
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/sécheresse 2.jpg"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                Illustrations
+              </SwiperSlide>{" "}
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/inondation 2.jpg"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                Illustrations
+              </SwiperSlide>{" "}
+            </Swiper>
             <p className="text-009999 italic ml-2 pt-12 text-2xl">
               Publié le 15/05/2023{" "}
             </p>

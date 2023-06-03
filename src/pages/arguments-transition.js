@@ -5,7 +5,10 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Head from "next/head";
 import { motion } from "framer-motion";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
 export default function Expertise() {
   const variants = {
     hidden: { opacity: 0, x: 0, y: -250 },
@@ -94,6 +97,53 @@ export default function Expertise() {
                 className="mx-auto my-12"
               />
             </div> */}
+             <Swiper
+              navigation={true}
+              modules={[Navigation]}
+              className="w-1/2 h-auto sm:w-full mb-12 mt-12"
+            >
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/biodiversity stripes.png"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                  className=""
+                />
+                Titre 1
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/placeholder.png"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                Titre 2
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/placeholder.png"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                Titre 3
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/placeholder.png"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                Titre 4
+              </SwiperSlide>
+            </Swiper>
             <p className="text-009999 italic pt-12 text-2xl">
               Publié le 19/05/2023{" "}
             </p>

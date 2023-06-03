@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Fade, Slide } from "react-awesome-reveal";
@@ -8,9 +8,10 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { motion, useTransform, MotionValue, useAnimation } from "framer-motion";
 import Navbar from "./Navbar";
+import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
+import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 export default function Hero() {
   const boxVariant = {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
@@ -40,7 +41,12 @@ export default function Hero() {
       </motion.div>
     );
   };
-
+  const progressCircle = useRef(null);
+  const progressContent = useRef(null);
+  const onAutoplayTimeLeft = (s, time, progress) => {
+    progressCircle.current.style.setProperty("--progress", 1 - progress);
+    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+  };
   return (
     <>
       {" "}
@@ -76,20 +82,58 @@ export default function Hero() {
       > */}
       {/* <div className="sm:h-full tablet:h-full laptop:h-full w-full h-full bg-ocean bg-no-repeat flex items-center justify-center"> */}
       {/* <div className="text-center sm:w-full"> */}
-      <div className="w-screen text-center h-screen bg-white">
-        <Image
+      <div className="w-screen text-center h-full pb-12 bg-white">
+       <Image
           className="mx-auto"
-          src="/Flyer Un&Demi.png"
-          width={300}
+          src="/UN&DEMI Logo 2.svg"
+          width={800}
           height={18}
           alt="logo"
           priority="true"
-        />
+        /> 
+        {/* <svg
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 500 500"
+          xmlSpace="preserve"
+          width="500"
+          height="500"
+        >
+          <g id="Capa_8">
+            <path
+              class="st0 svg-elem-1"
+              d="M902.9,539.5c0-31.8,19.8-58.9,47.7-69.9c3.8-1.5,6.3-5.2,6.3-9.3V307.5c0-5.1-1.9-10-5.5-13.5
+		c-2.2-2.2-4.4-3.2-6.1-3.7c-25.1-7.3-70.3,42.3-89.5,97.5c-3,8.7-6.4,17.4-10.2,25.8c-6.5,14.1-6,16.4-21.7,47.9
+		c-8.3,16.6-16.8,32.6-20.8,45.5c0,0-8.5,29.5-6.2,61.5c5.2,72.2,69,144,147.3,146.2c6.9,0.2,12.7-5.3,12.7-12.2v-83.8
+		c0-4.1-2.5-7.8-6.3-9.3C922.7,598.4,902.9,571.3,902.9,539.5z"
+            ></path>
+          </g>
+          <g id="Capa_12">
+            <path
+              class="st0 svg-elem-2"
+              d="M1014.6,664.7c-6.9,0.2-12.7-5.3-12.7-12.2v-33.8c0-4.1,2.5-7.8,6.3-9.3c27.9-10.9,47.7-38.1,47.7-69.8
+		s-19.8-58.9-47.7-69.9c-3.8-1.5-6.3-5.2-6.3-9.3v-94.9c0-5.1,1.9-10,5.5-13.5c2.2-2.2,4.4-3.2,6.1-3.7"
+            ></path>
+          </g>
+          <g id="Capa_6">
+            <path
+              class="st1 svg-elem-3"
+              d="M1118.6,510.2c-3-9.6-9.3-21.6-15.5-33.9c-11.6-23.3-11.4-25.2-16.1-35.5c-2.7-6-5.2-12.1-7.3-18.4
+		c-14-41.6-48.2-79.3-67.1-73.8c-1.3,0.4-2.9,1.1-4.6,2.8c-2.7,2.6-4.1,6.3-4.1,10l12,99c0,3.8,1.9,7.3,5.1,9.3
+		c23,14.9,38.3,40.7,38.3,70.2c0,29.5-15.3,55.3-38.3,70.2c-3.2,2-5.1,5.6-5.1,9.3l-12,36.5c0,5.2,4.3,9.3,9.5,9.1
+		c58.4-1.6,106-55.2,109.9-109C1124.9,532.1,1118.6,510.2,1118.6,510.2z"
+            ></path>
+          </g>
+        </svg> */}
         <p className="selection:bg-009999 selection:text-white text-009999 text-center text-[9rem] sm:text-5xl sm:w-full sm:pb-5 sm:pt-12 sm:text-center tablet:text-5xl tablet:pb-10 laptop:text-6xl uppercase font-bold tracking-wide">
           un & demi{" "}
         </p>{" "}
         <p className="selection:bg-009999 selection:text-white text-black text-center text-4xl tablet:text-3xl sm:text-xl laptop:text-2xl laptop:pb-14 sm:pb-6 font-light uppercase pb-12">
-          pédagogie et enthousiasme climatique.{" "}
+          pédagogie et enthousiasme climatique{" "}
         </p>{" "}
         <button class="bg-transparent pt-12">
           <Link href="#presentation" className="uppercase" scroll={false}>
@@ -107,7 +151,7 @@ export default function Hero() {
         className="h-full sm:h-full sm:pb-10 tablet:h-full laptop:h-full bg-white sm:grid sm:grid-cols-1"
       >
         <div className="px-12 tablet:px-12 ">
-          <Fade direction="left">
+          <Fade direction="left" triggerOnce={true}>
             <p className="text-009999 text-left text-[3rem] tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left laptop:text-left pt-12 uppercase font-bold tracking-wide">
               UN&DEMI est un cabinet de conseil indépendant.
             </p>{" "}
@@ -122,7 +166,7 @@ export default function Hero() {
 
           <p className="text-black text-justify pb-12 pt-20 text-2xl sm:text-lg">
             <ol className="list-none list-inside">
-              <Fade direction="left" delay={500}>
+              <Fade direction="left" delay={500} triggerOnce={true}>
                 <li className="">
                   <b className="uppercase text-009999 sm:text-xl">
                     La pédagogie.
@@ -138,7 +182,7 @@ export default function Hero() {
                   nature.{" "}
                 </li>
               </Fade>
-              <Fade direction="left" delay={1000}>
+              <Fade direction="left" delay={1000} triggerOnce={true}>
                 <li className="pt-5">
                   <b className="uppercase text-009999 sm:text-xl">
                     La Physique.
@@ -152,7 +196,7 @@ export default function Hero() {
                   passagers.km{" "}
                 </li>
               </Fade>
-              <Fade direction="left" delay={1500}>
+              <Fade direction="left" delay={1500} triggerOnce={true}>
                 <li className="pt-5">
                   <b className="uppercase text-009999 sm:text-xl">
                     De l&apos;enthousiasme à l&apos;action.
@@ -172,9 +216,71 @@ export default function Hero() {
               </Fade>
             </ol>
           </p>
-          <Fade direction="left" delay={1000}>
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 4500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            onAutoplayTimeLeft={onAutoplayTimeLeft}
+            className="w-1/2 h-1/2 sm:w-full sm:h-fit mb-12"
+          >
+            <SwiperSlide>
+              <Image
+                priority
+                src="/Illustrations/pédagogie tableau noir.jpg"
+                width={1000}
+                height={1000}
+                alt="article"
+                className=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                priority
+                src="/Illustrations/salle de classe blanc.jpg"
+                width={1000}
+                height={1000}
+                alt="article"
+                className=""
+              />
+            </SwiperSlide>{" "}
+            <SwiperSlide>
+              <Image
+                priority
+                src="/Illustrations/physique.jpg"
+                width={1000}
+                height={1000}
+                alt="article"
+                className=""
+              />
+            </SwiperSlide>{" "}
+            <SwiperSlide>
+              <Image
+                priority
+                src="/Illustrations/enthousiasme 1.jpg"
+                width={1000}
+                height={1000}
+                alt="article"
+                className=""
+              />
+            </SwiperSlide>
+            <div className="autoplay-progress" slot="container-end">
+              <svg viewBox="0 0 48 48" ref={progressCircle}>
+                <circle cx="24" cy="24" r="20"></circle>
+              </svg>
+              <span ref={progressContent}></span>
+            </div>
+          </Swiper>
+          <Fade direction="left" delay={1000} triggerOnce={true}>
             <button className="bg-009999 border rounded-md p-2 mb-12">
-              <Link href="/expertise" className="uppercase text-white">
+              <Link href="/sensibilisation" className="uppercase text-white">
                 Découvrez nos champs d&apos;expertise{" "}
               </Link>{" "}
             </button>{" "}
@@ -235,36 +341,36 @@ export default function Hero() {
         {" "}
         <div>
           <div className="px-12 tablet:col-span-3 laptop:col-span-3">
-            <Fade direction="right">
-              <p className="text-009999 text-right text-[3rem] tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left laptop:text-left pt-12 uppercase font-bold tracking-wide">
+            <Fade direction="right" triggerOnce={true}>
+              <p className="text-009999 text-left text-[3rem] tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left laptop:text-left pt-12 uppercase font-bold tracking-wide">
                 UN&DEMI vous accompagne à chaque étape de la mise en place de
                 votre stratégie énergie-climat:
               </p>{" "}
             </Fade>
           </div>
-          <Fade direction="right" delay={1000}>
+          <Fade direction="right" delay={1000} triggerOnce={true}>
             <div className="px-12 tablet:col-span-3">
-              <p className="text-black text-right text-2xl text-justify sm:text-lg sm:pt-5 pt-10 tablet:pt-12 tablet:pb-12 laptop:pb-12 laptop:pt-12">
-                <p className="text-right sm:text-left">
-                  Sensibilisation et formation de l&apos;équipe dédiée
+              <p className="text-black text-left text-2xl text-justify sm:text-lg sm:pt-5 pt-10 tablet:pt-12 tablet:pb-12 laptop:pb-12 laptop:pt-12">
+                <p className="text-left sm:text-left">
+                  • Sensibilisation et formation de l&apos;équipe dédiée
                 </p>
-                <p className="pt-5 text-right sm:text-left">
-                  Mesures physiques (Bilan Carbone, ACV, émissions évitées)
+                <p className="pt-5 text-left sm:text-left">
+                  • Mesures physiques (Bilan Carbone, ACV, émissions évitées)
                 </p>
-                <p className="pt-5 text-right sm:text-left">
-                  Construction de votre feuille de route, plan d&apos;actions
+                <p className="pt-5 text-left sm:text-left">
+                  • Construction de votre feuille de route, plan d&apos;actions
                 </p>
-                <p className="pt-5 text-right sm:text-left">
-                  Stratégie et trajectoire de réduction d&apos;émissions (SNBC,
+                <p className="pt-5 text-left sm:text-left">
+                  • Stratégie et trajectoire de réduction d&apos;émissions (SNBC,
                   QuantiGES, ACT, SBT…)
                 </p>
-                <p className="pt-5 text-right sm:text-left">
+                <p className="pt-5 text-left sm:text-left">
                   {" "}
-                  Communication (rédaction de contenu)
+                  • Communication (rédaction de contenu)
                 </p>
               </p>{" "}
-              <Fade direction="right" delay={1200}>
-                <div className="text-right sm:text-left pt-12">
+              <Fade direction="right" delay={1200} triggerOnce={true}>
+                <div className="text-left sm:text-left pt-12">
                   <button className="bg-009999 border rounded-md p-2 mb-12 text-right">
                     <Link href="/contact" className="uppercase text-white">
                       être recontacté
@@ -285,13 +391,13 @@ export default function Hero() {
       >
         <div className="grid grid-row-2 sm:grid sm:grid-cols-1">
           <div className="pl-12 pr-12">
-            <Fade direction="up">
+            <Fade direction="up" triggerOnce={true}>
               <p className="text-009999 text-center text-[3rem] sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left tablet:text-4xl tablet:pt-24 laptop:text-left laptop:pt-24 uppercase font-bold tracking-wide">
                 articles à lire pour mieux comprendre les enjeux de la
                 transition énergétique et climatique{" "}
               </p>{" "}
             </Fade>
-            <Fade direction="up" delay={500}>
+            <Fade direction="up" delay={500} triggerOnce={true}>
               <p className="text-black text-center text-xl sm:hidden sm:pr-5 tablet:text-left laptop:text-left laptop:px-0 pt-5 px-64 tablet:px-0">
                 La transition énergétique et climatique est un sujet
                 d&apos;actualité majeur. <br />
@@ -303,13 +409,13 @@ export default function Hero() {
           </div>
         </div>{" "}
         <div class="pt-12 pb-12 sm:pb-0 bg-white flex justify-center items-center sm:grid sm:grid-cols-1 sm:pt-2">
-          <Fade direction="left" delay={500}>
+          <Fade direction="left" delay={500} triggerOnce={true}>
             <Link href="/histoire-energie-climat">
               <div class="w-64 sm:w-fit sm:m-6 p-6 mx-10 bg-white rounded-xl shadow-xl hover:scale-105 transition-all transform duration-500">
                 <Image
-                  src="/hemisphère-nord-temperature-an-0.jpg"
-                  width={300}
-                  height={300}
+                  src="/Warming_stripes.png"
+                  width={500}
+                  height={500}
                   alt="article"
                 />
                 <div class="mt-4 ">
@@ -365,7 +471,7 @@ export default function Hero() {
               </div>
             </Link>{" "}
           </Fade>
-          <Fade direction="up" delay={500}>
+          <Fade direction="up" delay={500} triggerOnce={true}>
             <Link href="/decarbonation">
               <div class="w-64 sm:w-fit sm:m-6 p-6 mx-10 bg-white rounded-xl shadow-xl hover:scale-105 transition-all transform duration-500">
                 <Image
@@ -429,11 +535,11 @@ export default function Hero() {
               </div>
             </Link>
           </Fade>
-          <Fade direction="right" delay={500}>
+          <Fade direction="right" delay={500} triggerOnce={true}>
             <Link href="/arguments-transition">
               <div class="w-64 sm:w-fit sm:m-6 p-6 mx-10 bg-white rounded-xl shadow-xl hover:scale-105 transition-all transform duration-500">
                 <Image
-                  src="/transition.jpg"
+                  src="/eau.jpg"
                   width={300}
                   height={300}
                   alt="article"

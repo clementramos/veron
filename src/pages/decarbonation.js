@@ -76,13 +76,38 @@ export default function Expertise() {
               <br></br>
               <br></br>
               <ol className="ml-12 list-disc list-inside pb-12 sm:m-0">
-                <li className="mb-2">La production mondiale de pétrole dit conventionnel, c&apos;est-à-dire tout ce qui n&apos;est pas sable bitumineux du Canada et pétrole de roche-mère, est passé par un pic (maximum d&apos;extraction) dans les alentours des années 2008.</li>
-                <li className="mb-2">L&apos;Europe est passée depuis 2006 dans une décrue subie d&apos;approvisionnement en énergie d&apos;origine fossile.</li>
-                <li className="mb-2">Le Mexique a passé son pic de pétrole en 2004, la production a chuté de près de 50% depuis (2021). </li>
-                <li className="mb-2">L&apos;Argentine a passé son pic de pétrole en 1998, la production a chuté de 34% depuis (2021). </li>
-                <li className="mb-2">Le Venezuela a connu 2 pics de pétrole, un en 1970 et un second en 1998. Depuis ce second pic la production a chuté de plus de 80% (2021).</li>
-                <li className="mb-2">L&apos;Egypte a passé son pic de pétrole en 1993 et sa production a chuté de 37% depuis (2021).</li>
-                <li className="mb-2">La Norvège a passé son pic de pétrole en 2001 et sa production a chuté de 42% depuis (2021).</li>
+                <li className="mb-2">
+                  La production mondiale de pétrole dit conventionnel,
+                  c&apos;est-à-dire tout ce qui n&apos;est pas sable bitumineux
+                  du Canada et pétrole de roche-mère, est passé par un pic
+                  (maximum d&apos;extraction) dans les alentours des années
+                  2008.
+                </li>
+                <li className="mb-2">
+                  L&apos;Europe est passée depuis 2006 dans une décrue subie
+                  d&apos;approvisionnement en énergie d&apos;origine fossile.
+                </li>
+                <li className="mb-2">
+                  Le Mexique a passé son pic de pétrole en 2004, la production a
+                  chuté de près de 50% depuis (2021).{" "}
+                </li>
+                <li className="mb-2">
+                  L&apos;Argentine a passé son pic de pétrole en 1998, la
+                  production a chuté de 34% depuis (2021).{" "}
+                </li>
+                <li className="mb-2">
+                  Le Venezuela a connu 2 pics de pétrole, un en 1970 et un
+                  second en 1998. Depuis ce second pic la production a chuté de
+                  plus de 80% (2021).
+                </li>
+                <li className="mb-2">
+                  L&apos;Egypte a passé son pic de pétrole en 1993 et sa
+                  production a chuté de 37% depuis (2021).
+                </li>
+                <li className="mb-2">
+                  La Norvège a passé son pic de pétrole en 2001 et sa production
+                  a chuté de 42% depuis (2021).
+                </li>
               </ol>
             </p>
             <Swiper
@@ -93,7 +118,7 @@ export default function Expertise() {
               <SwiperSlide>
                 {" "}
                 <Image
-                  src="/placeholder.png"
+                  src="/decarbonation/1.png"
                   width={1000}
                   height={1000}
                   alt="article"
@@ -104,7 +129,7 @@ export default function Expertise() {
               <SwiperSlide>
                 {" "}
                 <Image
-                  src="/placeholder.png"
+                  src="/decarbonation/2.png"
                   width={1000}
                   height={1000}
                   alt="article"
@@ -114,7 +139,7 @@ export default function Expertise() {
               <SwiperSlide>
                 {" "}
                 <Image
-                  src="/placeholder.png"
+                  src="/decarbonation/3.png"
                   width={1000}
                   height={1000}
                   alt="article"
@@ -124,7 +149,47 @@ export default function Expertise() {
               <SwiperSlide>
                 {" "}
                 <Image
-                  src="/placeholder.png"
+                  src="/decarbonation/4.png"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                Titre 4
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/decarbonation/5.png"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                Titre 4
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/decarbonation/6.png"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                Titre 4
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/decarbonation/7.png"
+                  width={1000}
+                  height={1000}
+                  alt="article"
+                />
+                Titre 4
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <Image
+                  src="/decarbonation/8.png"
                   width={1000}
                   height={1000}
                   alt="article"
