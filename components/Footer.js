@@ -10,7 +10,7 @@ export default function Footer() {
           <div class="mb-6 sm:mb-0">
               <Image
                 className="mx-auto"
-                src="/LogoV8.png"
+                src="/LOGO FINAL/UN&DEMI Logo.svg"
                 width={250}
                 height={64}
                 alt="logo"

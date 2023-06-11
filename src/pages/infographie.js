@@ -38,11 +38,11 @@ export default function Expertise() {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <div className="bg-white bg-cover h-full">
-          <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12">
+        <div className="bg-white bg-cover h-full px-64 sm:px-12">
+          <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12 text-center">
             Les infographies qui percutent
           </p>
-          <Swiper
+          {/* <Swiper
             navigation={true}
             modules={[Navigation]}
             className="w-3/4 h-fit sm:w-full mb-12"
@@ -198,7 +198,117 @@ export default function Expertise() {
               />
               Titre
             </SwiperSlide>
-          </Swiper>
+          </Swiper> */}
+          <div>
+            {" "}
+            <Image
+              src="/Eq4dToAWMAAMGN-.jfif"
+              alt="graphique france"
+              width={1200}
+              height={500}
+              className="mx-auto py-4"
+            />
+          </div>
+          <div className="grid grid-cols-2 gap-4 sm:grid sm:grid-cols-1 sm:gap-2 tablet:grid tablet:grid-cols-1 tablet:gap-2">
+            <Image
+              src="/Infographie-Carree-Bon-Pote-INVBC3-768x768.webp"
+              alt="graphique france"
+              width={500}
+              height={500}
+              className="mx-auto py-4"
+            />
+            <Image
+              src="/UE-CARBON-FOOTPRINT-1024x576.webp"
+              alt="graphique france"
+              width={500}
+              height={500}
+              className="mx-auto py-4"
+            />
+            <Image
+              src="/EvYwOhVWYAQdu1X.jfif"
+              alt="graphique france"
+              width={500}
+              height={500}
+              className="mx-auto py-4"
+            />
+            <Image
+              src="/Ev86arDWYAA6Oea.jfif"
+              alt="graphique france"
+              width={500}
+              height={500}
+              className="mx-auto py-4"
+            />
+            <Image
+              src="/ALIMENTATION-BON-POTE.webp"
+              alt="graphique france"
+              width={500}
+              height={500}
+              className="mx-auto py-4"
+            />
+            <Image
+              src="/E3Q7WoMXoAIw7PG.png"
+              alt="graphique france"
+              width={500}
+              height={500}
+              className="mx-auto py-4"
+            />
+            <Image
+              src="/E0cnaZcWYAEiHW5.jfif"
+              alt="graphique france"
+              width={500}
+              height={500}
+              className="mx-auto py-4"
+            />
+            <Image
+              src="/EzUoFHoUUAcxDck.jfif"
+              alt="graphique france"
+              width={500}
+              height={500}
+              className="mx-auto py-4"
+            />
+            <Image
+              src="/ExEuvw4WQAISBvc.jfif"
+              alt="graphique france"
+              width={500}
+              height={500}
+              className="mx-auto py-4"
+            />
+            <Image
+              src="/PathwaysOurWolrdinData.webp"
+              alt="graphique france"
+              width={500}
+              height={500}
+              className="mx-auto py-4"
+            />
+            <Image
+              src="/E4ZECubXIAAcZ-U.jfif"
+              alt="graphique france"
+              width={500}
+              height={500}
+              className="mx-auto py-4"
+            />
+            <Image
+              src="/E6FKJZdX0AAC6VV.jfif"
+              alt="graphique france"
+              width={500}
+              height={500}
+              className="mx-auto py-4"
+            />
+            <Image
+              src="/image-45-1024x589.webp"
+              alt="graphique france"
+              width={500}
+              height={500}
+              className="mx-auto py-4"
+            />
+            <Image
+              src="/image-40-1024x596.webp"
+              alt="graphique france"
+              width={500}
+              height={500}
+              className="mx-auto py-4"
+            />
+          </div>
           <p className="text-009999 italic ml-12 pt-12 text-2xl">
             Publié le 27/05/2023{" "}
           </p>

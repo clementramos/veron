@@ -38,7 +38,7 @@ export default function Expertise() {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <div className="bg-white bg-cover h-full">
+        <div className="bg-white bg-cover h-full px-64 sm:px-12">
           <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12">
             La décarbonation : la choisir ou la subir
           </p>
@@ -87,30 +87,87 @@ export default function Expertise() {
                   L&apos;Europe est passée depuis 2006 dans une décrue subie
                   d&apos;approvisionnement en énergie d&apos;origine fossile.
                 </li>
+                <div className="py-12 grid grid-cols-2 sm:grid sm:grid-cols-1 sm:gap-8">
+                  <Image
+                    src="/europe.png"
+                    alt="graphique europe"
+                    width={500}
+                    height={500}
+                  />
+                  <Image
+                    src="/france.png"
+                    alt="graphique france"
+                    width={500}
+                    height={500}
+                  />
+                </div>
                 <li className="mb-2">
                   Le Mexique a passé son pic de pétrole en 2004, la production a
                   chuté de près de 50% depuis (2021).{" "}
-                </li>
-                <li className="mb-2">
-                  L&apos;Argentine a passé son pic de pétrole en 1998, la
-                  production a chuté de 34% depuis (2021).{" "}
-                </li>
+                </li>{" "}
                 <li className="mb-2">
                   Le Venezuela a connu 2 pics de pétrole, un en 1970 et un
                   second en 1998. Depuis ce second pic la production a chuté de
                   plus de 80% (2021).
                 </li>
+                <div className="py-12 grid grid-cols-2 sm:grid sm:grid-cols-1 sm:gap-8">
+                  <Image
+                    src="/petrole.png"
+                    alt="graphique petrole"
+                    width={500}
+                    height={500}
+                  />
+                </div>
+                <li className="mb-2">
+                  L&apos;Argentine a passé son pic de pétrole en 1998, la
+                  production a chuté de 34% depuis (2021).{" "}
+                </li>
                 <li className="mb-2">
                   L&apos;Egypte a passé son pic de pétrole en 1993 et sa
                   production a chuté de 37% depuis (2021).
                 </li>
+                <div className="py-12 grid grid-cols-2 sm:grid sm:grid-cols-1 sm:gap-8">
+                  <Image
+                    src="/petrole2.png"
+                    alt="graphique petrole"
+                    width={500}
+                    height={500}
+                  />
+                </div>
+                <li className="mb-2">
+                  Nous constatons ces décrues d&apos;extraction de pétrole
+                  également sur l&apos;ensemble du continent Africain ainsi que
+                  pour l&apos;Angleterre.
+                </li>
+                <div className="py-12 grid grid-cols-2 sm:grid sm:grid-cols-1 sm:gap-8">
+                  <Image
+                    src="/uk.png"
+                    alt="graphique uk"
+                    width={500}
+                    height={500}
+                  />
+                  <Image
+                    src="/afrique.png"
+                    alt="graphique afrique"
+                    width={500}
+                    height={500}
+                  />
+                </div>
                 <li className="mb-2">
                   La Norvège a passé son pic de pétrole en 2001 et sa production
                   a chuté de 42% depuis (2021).
                 </li>
+                <div className="py-12 grid grid-cols-2 sm:grid sm:grid-cols-1 sm:gap-8">
+                  <Image
+                    src="/norvege.png"
+                    alt="graphique norvege"
+                    width={500}
+                    height={500}
+                  />
+                </div>
               </ol>
             </p>
-            <Swiper
+            {/* <Swiper
               navigation={true}
               modules={[Navigation]}
               className="w-1/2 h-auto sm:w-full mb-12"
@@ -196,7 +253,7 @@ export default function Expertise() {
                 />
                 Titre 4
               </SwiperSlide>
-            </Swiper>
+            </Swiper> */}
             <p classname="text-black ml-2 mt-12 text-2xl">
               Les experts modélisent, sur la base des réserves prouvées de
               matières fossiles, un pic de production mondiale de pétrole dans

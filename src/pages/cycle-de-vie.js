@@ -36,10 +36,10 @@ export default function Expertise() {
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
-          <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12">
+          <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12 text-center">
             Analyse cycle de vie
           </p>
-          <p className="text-black  ml-12 pt-2 text-2xl pb-12">
+          <p className="text-black  ml-12 pt-2 text-2xl pb-12 px-64 sm:px-12">
             <ol className="list-none list-inside">
               <li>
                 Étape 1 : définition des objectifs et du champ de l&apos;étude
@@ -52,7 +52,7 @@ export default function Expertise() {
               </li>
             </ol>
           </p>
-          <p className="text-black  ml-12 pt-2 text-2xl">
+          <p className="text-black  ml-12 pt-2 text-2xl px-64 sm:px-12">
             L&apos;analyse du cycle de vie est l&#39;outil le plus abouti en
             matière d&apos;évaluation globale et multicritère des impacts
             environnementaux. Cette méthode normalisée permet de mesurer les
@@ -64,7 +64,7 @@ export default function Expertise() {
             résultats obtenus en fonction de ses objectifs initiaux. Sa
             robustesse est fondée sur une double approche :
           </p>
-          <p className="text-black  ml-12 pt-2 text-2xl pb-12">
+          <p className="text-black  ml-12 pt-2 text-2xl pb-12 px-64 sm:px-12">
             <ol className="list-decimal list-inside">
               <li>Une approche « cycle de vie »</li>
               <li>Une approche « multicritère »</li>
@@ -72,7 +72,7 @@ export default function Expertise() {
             </ol>
           </p>
           <Image
-            className="ml-12 pb-10 "
+            className="ml-12 pb-10 px-64 sm:px-12"
             src="/Illustrations/analyse cycle de vie.jpg"
             alt="analyse cycle de vie"
             width={1000}

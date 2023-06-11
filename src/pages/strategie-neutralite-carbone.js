@@ -38,10 +38,10 @@ export default function Expertise() {
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
-          <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12">
+          <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12 text-center">
             Stratégie neutralité carbone (SBT, SNBC, QuantiGES, ACT…)
           </p>
-          <p className="text-black  ml-12 pt-2 text-2xl">
+          <p className="text-black  ml-12 pt-2 text-2xl px-64 sm:px-12">
             Expert des enjeux énergie et climat sectoriels et des leviers
             opérationnels pour s&apos;engager dans la transition bas-carbone,
             UN&amp;DEMI accompagne ses client·es dans l&apos;élaboration de
@@ -49,7 +49,7 @@ export default function Expertise() {
             recommandations du référentiel Net Zero Initiative et de
             l&apos;ADEME.
           </p>
-          <p className="text-black  ml-12 pt-2 text-2xl pb-12">
+          <p className="text-black  ml-12 pt-2 text-2xl pb-12 px-64 sm:px-12">
             <ol className="list-none list-inside">
               <li>✓ Je réduis mes émissions directes et indirectes</li>
               <li>✓ J&apos;aide mes client·es à se décarboner</li>
@@ -62,7 +62,7 @@ export default function Expertise() {
             </ol>
           </p>
           <Image
-            className="ml-12 sm:m-0 pb-10 "
+            className="ml-12 sm:m-0 pb-10 px-64 sm:px-12"
             src="/Illustrations/2023-05-24_18h54_22.png"
             alt="stratégie neutralite"
             width={1000}

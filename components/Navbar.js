@@ -70,14 +70,14 @@ export default function Navbar() {
                         <div className="flex flex-shrink-0 items-center pr-10">
                           <Image
                             className="mr-2"
-                            src="/Flyer Un&Demi.png"
-                            width={18}
-                            height={18}
+                            src="/LOGO FINAL/UN&DEMI Logo.svg"
+                            width={200}
+                            height={200}
                             alt="logo"
                           />
-                          <p className="text-2xl font-bold text-009999 tracking-wide">
+                          {/* <p className="text-2xl font-bold text-009999 tracking-wide">
                             UN&DEMI
-                          </p>
+                          </p> */}
                         </div>
                       </Link>
 

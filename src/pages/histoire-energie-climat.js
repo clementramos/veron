@@ -25,7 +25,7 @@ export default function Expertise() {
         <link rel="icon" href="/mainlogo.svg" />
       </Head>
       <Navbar />
-      <div className="bg-white bg-cover h-full">
+      <div className="bg-white bg-cover h-full px-64 sm:px-12">
         {" "}
         <motion.main
           initial="hidden"
@@ -45,44 +45,85 @@ export default function Expertise() {
           <p className="text-black mx-12 pt-2 text-2xl">
             {" "}
             <p className="text-black  ml-2 pt-2 text-2xl">
-              A partir du XVIII° siècle, l&apos;être humain commence
-              l&apos;exploitation industrielle du charbon. Viendront par la
-              suite celles du pétrole (1850) puis celle du gaz (1950). Ces
-              énergies primaires sont remarquablement concentrées. Elles nous
-              ont permis d&apos;accéder à l&apos;abondance énergétique. Cette
-              dernière est la cause profonde de l&apos;explosion de la
-              démographie mondiale, de l&apos;augmentation de l&apos;espérance
-              de vie, de l&apos;augmentation du pouvoir d&apos;achat et de
-              l&apos;émergence de la classe moyenne supérieure. <br></br>
+              A partir du XVIII° siècle, l’être humain commence l’exploitation
+              industrielle du charbon. Viendront par la suite celles du pétrole
+              (1850) puis celle du gaz (1950). Ces énergies primaires fossiles
+              sont remarquablement concentrées. Elles nous ont permis d’accéder
+              à l’abondance énergétique. Cette dernière est la cause profonde de
+              l’explosion de la démographie mondiale, de l’augmentation de notre
+              espérance et de notre confort de vie. <br></br>
+              <div className="py-12 grid grid-cols-3 sm:grid sm:grid-cols-1 sm:gap-8">
+                <Image src="/gaz 3.jpg" alt="gaz" width={300} height={300} />
+                <Image
+                  src="/charbon 1.png"
+                  alt="charbon"
+                  width={300}
+                  height={300}
+                />
+                <Image
+                  src="/pétrole.jpg"
+                  alt="petrole"
+                  width={300}
+                  height={300}
+                />
+              </div>
               <br></br>Lors de leur combustion (utilisation) ces énergies
               primaires fossiles émettent du gaz carbonique (CO2). Cette
-              molécule est un gaz à effet de serre. L&apos;effet de serre est un
-              phénomène naturel par lequel certains gaz présents dans
-              l&apos;atmosphère retiennent la chaleur en absorbant le
+              molécule est un gaz à effet de serre (GES) chimiquement stable.{" "}
+              <br></br>
+              <div className="py-12">
+                <Image
+                  src="/CO2 2.png"
+                  alt="co2"
+                  width={300}
+                  height={300}
+                  className="mx-auto"
+                />
+              </div>
+              <br></br>
+              L’effet de serre est un phénomène naturel par lequel certains gaz
+              présents dans l’atmosphère retiennent la chaleur en absorbant le
               rayonnement infra-rouge émis par la Terre. Ce phénomène a permis
-              l&apos;apparition de la vie sur Terre mais aujourd&apos;hui
-              l&apos;être humain ajoute à ce phénomène naturel une composante
-              que l&apos;on appelle « effet de serre additionnel ». Par ses
-              activités et plus précisément son recours massif à
-              l&apos;utilisation d&apos;énergie d&apos;origine fossile,
-              l&apos;être humain extrait des hydrocarbures (molécules composées
-              d&apos;atomes de carbone et d&apos;hydrogène) du sol de la Terre
-              et en les exploitant, rejette du CO2 dans l&apos;atmosphère. Le
-              bilan énergétique de la Terre est alors déséquilibré. La
-              température moyenne globale de la planète augmente et les
+              l’apparition de la vie sur Terre mais aujourd’hui l’être humain
+              ajoute à ce phénomène naturel une composante supplémentaire. On
+              appelle cette composante supplémentaire « effet de serre
+              additionnel ». De par ses activités et plus précisément son
+              recours massif aux énergies d’origine fossile, l’être humain
+              extrait des hydrocarbures (molécules composées d’atomes de carbone
+              et d’hydrogène) de la Terre et en les exploitant, rejette du CO2,
+              mais pas que…, dans l’atmosphère.<br></br>{" "}
+              <div className="py-12">
+                <Image
+                  src="/les GES Kyoto.png"
+                  alt="ges"
+                  width={300}
+                  height={300}
+                  className="mx-auto"
+                />
+              </div>
+              <br></br> Le bilan énergétique de la Terre est alors déséquilibré.
+              La température moyenne globale de la planète augmente et les
               phénomènes climatiques extrêmes voient leur intensité et leur
-              fréquence s&apos;accentuer. <br></br>
-              <br></br> L&apos;être humain a, à ce jour, rejeté dans
-              l&apos;atmosphère près de 2 500 Gt de CO2 depuis 1850 augmentant
-              par voie de conséquence la température moyenne globale de la Terre
-              de +1.2 °C par rapport à l&apos;aire préindustrielle. <br></br>
-              <br></br> Dans ce contexte, comment maintenir un confort de vie
-              digne et serein ? Il est urgent d&apos;agir en transformant notre
-              mode de vie, en réduisant drastiquement nos émissions de gaz à
-              effet de serre, en stoppant la destruction du vivant qui est à
-              l&apos;œuvre.
+              fréquence s’accentuer.<br></br>{" "}
+              <div className="py-12">
+                <Image
+                  src="/évènements climatiques extremes.png"
+                  alt="evenements climatiques"
+                  width={300}
+                  height={300}
+                  className="mx-auto"
+                />
+              </div>
+              <br></br>L’être humain a, à ce jour, rejeté dans l’atmosphère près
+              de 2 500 Gt de CO2 depuis 1850 augmentant par voie de conséquence
+              la température moyenne globale de la Terre de +1.2 °C (2023) par
+              rapport à l’aire préindustrielle. <Link href="/graphiques" className="text-009999">Source.</Link> <br></br> <br></br>Dans ce contexte,
+              comment maintenir un confort de vie digne et serein pour chacun ?
+              Il est urgent d’agir en transformant notre mode de vie, en
+              réduisant drastiquement nos émissions de gaz à effet de serre, en
+              stoppant la destruction du vivant qui est à l’œuvre.
             </p>
-            <div className="grid grid-cols-2 gap-8">
+            {/* <div className="grid grid-cols-2 gap-8">
               <Image
                 src="/Onerc_Température_Mondiale_Moyenne_1850_2017.png"
                 width={800}
@@ -97,8 +138,8 @@ export default function Expertise() {
                 alt="article"
                 className="mx-auto my-12"
               />
-            </div>
-            <Swiper
+            </div> */}
+            {/* <Swiper
               navigation={true}
               modules={[Navigation]}
               className="w-1/2 h-auto sm:w-full mb-12 mt-12"
@@ -184,7 +225,7 @@ export default function Expertise() {
                 />
                 Illustrations
               </SwiperSlide>{" "}
-            </Swiper>
+            </Swiper> */}
             <p className="text-009999 italic ml-2 pt-12 text-2xl">
               Publié le 15/05/2023{" "}
             </p>

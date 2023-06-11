@@ -83,14 +83,14 @@ export default function Hero() {
       {/* <div className="sm:h-full tablet:h-full laptop:h-full w-full h-full bg-ocean bg-no-repeat flex items-center justify-center"> */}
       {/* <div className="text-center sm:w-full"> */}
       <div className="w-screen text-center h-full pb-12 bg-white">
-       <Image
+        <Image
           className="mx-auto"
           src="/UN&DEMI Logo 2.svg"
           width={800}
           height={18}
           alt="logo"
           priority="true"
-        /> 
+        />
         {/* <svg
           version="1.1"
           id="Capa_1"
@@ -150,7 +150,7 @@ export default function Hero() {
         id="presentation"
         className="h-full sm:h-full sm:pb-10 tablet:h-full laptop:h-full bg-white sm:grid sm:grid-cols-1"
       >
-        <div className="px-12 tablet:px-12 ">
+        <div className="px-64 sm:px-12 tablet:px-12 ">
           <Fade direction="left" triggerOnce={true}>
             <p className="text-009999 text-left text-[3rem] tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left laptop:text-left pt-12 uppercase font-bold tracking-wide">
               UN&DEMI est un cabinet de conseil indépendant.
@@ -181,6 +181,13 @@ export default function Hero() {
                   indispensables à la bonne marche d&apos;un projet de cette
                   nature.{" "}
                 </li>
+                <Image
+                  src="/salle de classe blanc.jpg"
+                  alt="salle de classe"
+                  width={250}
+                  height={250}
+                  className="mx-auto py-12"
+                />{" "}
               </Fade>
               <Fade direction="left" delay={1000} triggerOnce={true}>
                 <li className="pt-5">
@@ -195,6 +202,13 @@ export default function Hero() {
                   unités plus exotiques comme des tonnes.km ou encore des
                   passagers.km{" "}
                 </li>
+                <Image
+                  src="/physique.jpg"
+                  alt="physique"
+                  width={250}
+                  height={250}
+                  className="mx-auto py-12"
+                />{" "}
               </Fade>
               <Fade direction="left" delay={1500} triggerOnce={true}>
                 <li className="pt-5">
@@ -213,10 +227,17 @@ export default function Hero() {
                   suis pas complètement sûre » que nous serions moins heureux
                   dans une société sobre et résiliente.{" "}
                 </li>
+                <Image
+                  src="/enthousiasme 2.jpg"
+                  alt="enthousiasme"
+                  width={250}
+                  height={250}
+                  className="mx-auto py-12"
+                />{" "}
               </Fade>
             </ol>
           </p>
-          <Swiper
+          {/* <Swiper
             spaceBetween={30}
             centeredSlides={true}
             autoplay={{
@@ -277,11 +298,11 @@ export default function Hero() {
               </svg>
               <span ref={progressContent}></span>
             </div>
-          </Swiper>
+          </Swiper> */}
           <Fade direction="left" delay={1000} triggerOnce={true}>
             <button className="bg-009999 border rounded-md p-2 mb-12">
               <Link href="/sensibilisation" className="uppercase text-white">
-                Découvrez nos champs d&apos;expertise{" "}
+                Découvrez nos champs d&apos;expertises{" "}
               </Link>{" "}
             </button>{" "}
           </Fade>
@@ -340,7 +361,7 @@ export default function Hero() {
       >
         {" "}
         <div>
-          <div className="px-12 tablet:col-span-3 laptop:col-span-3">
+          <div className="px-64 sm:px-12 tablet:col-span-3 laptop:col-span-3">
             <Fade direction="right" triggerOnce={true}>
               <p className="text-009999 text-left text-[3rem] tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left laptop:text-left pt-12 uppercase font-bold tracking-wide">
                 UN&DEMI vous accompagne à chaque étape de la mise en place de
@@ -349,7 +370,7 @@ export default function Hero() {
             </Fade>
           </div>
           <Fade direction="right" delay={1000} triggerOnce={true}>
-            <div className="px-12 tablet:col-span-3">
+            <div className="px-64 sm:px-12 tablet:col-span-3">
               <p className="text-black text-left text-2xl text-justify sm:text-lg sm:pt-5 pt-10 tablet:pt-12 tablet:pb-12 laptop:pb-12 laptop:pt-12">
                 <p className="text-left sm:text-left">
                   • Sensibilisation et formation de l&apos;équipe dédiée
@@ -361,8 +382,8 @@ export default function Hero() {
                   • Construction de votre feuille de route, plan d&apos;actions
                 </p>
                 <p className="pt-5 text-left sm:text-left">
-                  • Stratégie et trajectoire de réduction d&apos;émissions (SNBC,
-                  QuantiGES, ACT, SBT…)
+                  • Stratégie et trajectoire de réduction d&apos;émissions
+                  (SNBC, QuantiGES, ACT, SBT…)
                 </p>
                 <p className="pt-5 text-left sm:text-left">
                   {" "}
@@ -390,7 +411,7 @@ export default function Hero() {
         className="selection:bg-009999 selection:text-white bg-white sm:pt-2 pt-12 sm:h-fit h-screen laptop:h-full"
       >
         <div className="grid grid-row-2 sm:grid sm:grid-cols-1">
-          <div className="pl-12 pr-12">
+          <div className="px-64 sm:px-12">
             <Fade direction="up" triggerOnce={true}>
               <p className="text-009999 text-center text-[3rem] sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left tablet:text-4xl tablet:pt-24 laptop:text-left laptop:pt-24 uppercase font-bold tracking-wide">
                 articles à lire pour mieux comprendre les enjeux de la
@@ -538,12 +559,7 @@ export default function Hero() {
           <Fade direction="right" delay={500} triggerOnce={true}>
             <Link href="/arguments-transition">
               <div class="w-64 sm:w-fit sm:m-6 p-6 mx-10 bg-white rounded-xl shadow-xl hover:scale-105 transition-all transform duration-500">
-                <Image
-                  src="/eau.jpg"
-                  width={300}
-                  height={300}
-                  alt="article"
-                />
+                <Image src="/eau.jpg" width={300} height={300} alt="article" />
                 <div class="mt-4 ">
                   <h1 class="text-xl font-bold text-gray-700 w-fit">
                     Pourquoi transitionner?

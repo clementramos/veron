@@ -37,7 +37,7 @@ export default function Expertise() {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <div className="bg-white bg-cover h-full">
+        <div className="bg-white bg-cover h-full px-64 sm:px-12">
           <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12">
           Pourquoi transitionner? : les arguments de la transition
           </p>
@@ -97,53 +97,13 @@ export default function Expertise() {
                 className="mx-auto my-12"
               />
             </div> */}
-             <Swiper
-              navigation={true}
-              modules={[Navigation]}
-              className="w-1/2 h-auto sm:w-full mb-12 mt-12"
-            >
-              <SwiperSlide>
-                {" "}
-                <Image
+           <Image
                   src="/biodiversity stripes.png"
+                  alt="photo ?"
                   width={1000}
-                  height={1000}
-                  alt="article"
-                  className=""
-                />
-                Titre 1
-              </SwiperSlide>
-              <SwiperSlide>
-                {" "}
-                <Image
-                  src="/placeholder.png"
-                  width={1000}
-                  height={1000}
-                  alt="article"
-                />
-                Titre 2
-              </SwiperSlide>
-              <SwiperSlide>
-                {" "}
-                <Image
-                  src="/placeholder.png"
-                  width={1000}
-                  height={1000}
-                  alt="article"
-                />
-                Titre 3
-              </SwiperSlide>
-              <SwiperSlide>
-                {" "}
-                <Image
-                  src="/placeholder.png"
-                  width={1000}
-                  height={1000}
-                  alt="article"
-                />
-                Titre 4
-              </SwiperSlide>
-            </Swiper>
+                  height={250}
+                  className="mx-auto py-12"
+                />{" "}
             <p className="text-009999 italic pt-12 text-2xl">
               Publié le 19/05/2023{" "}
             </p>

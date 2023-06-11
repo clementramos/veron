@@ -23,7 +23,7 @@ export default function Expertise() {
       </Head>
       <Navbar />
 
-      <div className="bg-white bg-cover h-full">
+      <div className="bg-white bg-cover h-full ">
         <motion.main
           initial="hidden"
           animate="enter"
@@ -36,24 +36,24 @@ export default function Expertise() {
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
-          <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12">
+          <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12 text-center">
             Calcul de votre Bilan Carbone®
           </p>
           <Image
             className="mx-auto pb-10 "
             src="/logo-bilan-carbone-final.png"
             alt="bilan carbone - logo"
-            width={1000}
+            width={600}
             height={200}
           />
-          <p className="text-black mx-12 pt-2 text-2xl">
+          <p className="text-black mx-12 pt-2 text-2xl px-64 sm:px-12">
             <b>
               Changement climatique, énergie : l&apos;urgence et la nécessité
               d&apos;agir.{" "}
             </b>
             <br></br>
           </p>
-          <p className="text-black  ml-12 pt-2 text-2xl">
+          <p className="text-black  ml-12 pt-2 text-2xl px-64 sm:px-12">
             Avec le Bilan Carbone®, les décideurs publics et privés disposent
             d&apos;un moyen efficace pour initier et piloter la réduction des
             émissions de gaz à effet de serre liées à leur activité. La méthode
@@ -67,10 +67,10 @@ export default function Expertise() {
             outils vous permettront également de préparer votre bilan GES
             réglementaire.
           </p>
-          <p className="text-black font-bold ml-12 pt-6 text-2xl">
+          <p className="text-black font-bold ml-12 pt-6 text-2xl px-64 sm:px-12">
             Les étapes clefs de la mission Bilan Carbone® :{" "}
           </p>
-          <p className="text-black  ml-12 pt-2 text-2xl pb-12">
+          <p className="text-black  ml-12 pt-2 text-2xl pb-12 px-64 sm:px-12">
             <ol className="list-disc list-inside">
               <li>Cadrage</li>
               <li>Identification des sources et émissions </li>
@@ -81,10 +81,10 @@ export default function Expertise() {
             </ol>
           </p>
           <Image
-            className="ml-12 pb-10 "
-            src="/placeholder.png"
-            alt="placeholder"
-            width={1000}
+            className="ml-12 pb-10 px-64 sm:px-12 "
+            src="/bilancarbone.png"
+            alt="bilan carbone"
+            width={1500}
             height={200}
           />
           <button className="ml-12 pt-2 bg-009999 border rounded-md p-2">

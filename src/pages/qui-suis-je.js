@@ -27,7 +27,7 @@ export default function QuiSuisJe() {
       <Navbar />
       <div
         key="moi"
-        className="selection:bg-009999 selection:text-white pb-5 pt-10 sm:pt-5 h-full sm:h-full tablet:h-full laptop:h-full bg-white"
+        className="selection:bg-009999 selection:text-white pb-5 pt-10 sm:pt-5 h-full sm:h-full tablet:h-full laptop:h-full bg-white px-64 sm:px-12"
       >
         <AnimatePresence>
           {show && (
@@ -59,40 +59,39 @@ export default function QuiSuisJe() {
                   </p>{" "}
                   <p className="text-black text-left text-xl sm:text-lg sm:pt-5 pb-12 pt-12  pr-24 pr-5">
                     Animée par une farouche ambition de participer à la création
-                    d&apos;une économie et d&apos;une société désirables,
-                    Un&Demi porte haut et fort ses valeurs d&apos;engagement, de
-                    pédagogie et d&apos;enthousiasme. <br></br>
-                    <br></br>
-                    Chaque jour, Un&Demi est pleinement investit dans sa mission
-                    : accompagner les organisations et les individus dans un
-                    monde qui connaît et connaîtra un nombre de soubresauts de
-                    plus en plus fréquents et intenses. Ensemble, nous
-                    parviendrons à limiter les impacts du changement climatique
-                    sur nos sociétés en limitant le réchauffement de la
-                    température globale moyenne de la Terre à +1.5°C au dessus
-                    des niveaux pré-industriels.<br></br>
-                    <br></br> Ingénieur de formation et après 6 années
-                    d&apos;activités dans le secteur on ne peut plus carboné de
-                    la chimie, nous apportons aux organisations pédagogie et
+                    d&apos;une économie et d&apos;une société désirables, Un&Demi porte
+                    haut et fort ses valeurs d&apos;engagement, de pédagogie et
+                    d&apos;enthousiasme.<br></br>
+                    <br></br> Chaque jour, Un&Demi est pleinement investit dans
+                    sa mission : accompagner les organisations et les individus
+                    dans un monde qui connaît et connaîtra un nombre de
+                    soubresauts de plus en plus fréquents et intenses. Ensemble,
+                    nous parviendrons à limiter les impacts du changement
+                    climatique sur nos sociétés en limitant le réchauffement
+                    globale moyen de la Terre sous 2°C par rapport aux niveaux
+                    préindustriels.<br></br>
+                    <br></br> Ingénieur de formation et après plusieurs années
+                    d&apos;activités dans le secteur on ne peut plus carboné de la
+                    chimie, nous apportons aux organisations pédagogie et
                     expertise énergie climat. Le but : vous accompagner vers
-                    l&apos;action et ainsi vous doter d&apos;une activité
-                    résiliente et adaptée aux bouleversements à venir.<br></br>
+                    l&apos;action et ainsi vous doter d&apos;une activité résiliente et
+                    adaptée aux bouleversements à venir.<br></br>
                     <br></br> Je m&apos;appelle Victor Véron et le sujet énergie
-                    climat m&apos;a « pris aux tripes » dès les premiers
-                    instants où j&apos;y est mis sérieusement les pieds.
-                    Impossible depuis d&apos;en sortir. Véritable passion, je
-                    mets au service de votre organisation mon expertise énergie
-                    climat et mes cellules grises. Hâte de vous rencontrer et
-                    d&apos;accomplir de grande chose, ensemble !
+                    climat m&apos;a « pris aux tripes » dès les premiers instants où
+                    j&apos;y est mis sérieusement les pieds. Impossible depuis d&apos;en
+                    sortir. Véritable passion, je mets au service de votre
+                    organisation mon expertise énergie climat et mes cellules
+                    grises. Hâte de vous rencontrer et de co-construire, avec
+                    vous, l&apos;économie de demain.
                   </p>{" "}
                   <Image
-                  src="/IMG-20230512-WA0045.jpg"
-                  alt="victor"
-                  width={500}
-                  height={600}
-                  className="laptop:hidden tablet:hidden mx-auto my-auto sm:px-12 rounded-xl sm:px-5 laptop:hover:scale-125 transition-all transform duration-500"
-                  loading="eager"
-                />
+                    src="/IMG-20230512-WA0045.jpg"
+                    alt="victor"
+                    width={500}
+                    height={600}
+                    className="laptop:hidden tablet:hidden laptopL:hidden laptop4k:hidden mx-auto my-auto sm:px-12 rounded-xl sm:px-5 laptop:hover:scale-125 transition-all transform duration-500"
+                    loading="eager"
+                  />
                   <button className="bg-009999 border rounded-md p-2">
                     <Link href="/contact" className="uppercase text-white">
                       En savoir plus{" "}

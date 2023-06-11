@@ -23,7 +23,7 @@ export default function Expertise() {
       </Head>
       <Navbar />
 
-      <div className="bg-white bg-cover h-full">
+      <div className="bg-white bg-cover h-full px-64 sm:px-12">
         <motion.main
           initial="hidden"
           animate="enter"
@@ -36,7 +36,7 @@ export default function Expertise() {
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
-          <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12">
+          <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12 text-center">
             Stratégie résilience
           </p>
           <p className="text-black pb-12 ml-12 pt-2 text-2xl">

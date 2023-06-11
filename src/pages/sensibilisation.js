@@ -46,17 +46,17 @@ export default function Expertise() {
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
-          <p className="text-009999 text-4xl font-bold uppercase  pt-12 mb-12">
+          <p className="text-009999 text-4xl font-bold uppercase  pt-12 mb-12 text-center">
             Sensibilisation et formation
           </p>
           <Image
             className="mx-auto pb-10"
             src="/LA-FRESQUE-DU-CLIMAT-Logo.png"
             alt="fresque climat - logo"
-            width={1000}
+            width={600}
             height={200}
           />
-          <p className="text-black pt-2 pb-12 text-2xl">
+          <p className="text-black pt-2 pb-12 text-2xl px-64 sm:px-12">
             UN&DEMI forme votre équipe dédiée à la conduite du projet en
             commençant par un atelier : La Fresque Du Climat. <br></br>
             <br></br>Faire basculer le monde dans la transition. Pour agir, il
@@ -65,23 +65,23 @@ export default function Expertise() {
             aux organisations de s&apos;approprier le défi de l&apos;urgence
             climatique. <br></br>
             <br></br>
-            <ol className="list-disc list-inside grid grid-cols-4 text-center font-bold">
+            <ol className="list-disc list-inside grid grid-cols-4 sm:grid sm:grid-cols-1 sm:text-left text-center font-bold ">
               <li>Bientôt 1.1 million de participants</li>
               <li>+ de 15 000 animateurs actifs</li>
               <li> 139 pays</li>
               <li>+45 langues</li>
             </ol>
           </p>
-          <p className="text-black font-bold  pt-6 text-2xl">Scientifique</p>
-          <p className="text-black   pt-2 text-2xl">
+          <p className="text-black font-bold  pt-6 text-2xl px-64 sm:px-12">Scientifique</p>
+          <p className="text-black   pt-2 text-2xl px-64 sm:px-12">
             La Fresque du Climat est un outil neutre et objectif. Il se fonde
             sur les données issues des rapports scientifiques du GIEC (Groupe
             d&apos;experts intergouvernemental sur l&apos;évolution du climat)
             dont les recommandations orientent les décisions politiques et
             économiques à l&apos;échelle mondiale.
           </p>
-          <p className="text-black font-bold  pt-6 text-2xl">Accessible</p>
-          <p className="text-black   pt-2 text-2xl">
+          <p className="text-black font-bold  pt-6 text-2xl px-64 sm:px-12">Accessible</p>
+          <p className="text-black   pt-2 text-2xl px-64 sm:px-12">
             L&apos;atelier mobilise l&apos;intelligence collective pour
             sensibiliser les participants aux changements climatiques. Son
             approche ludique et pédagogique permet à tous les publics de
@@ -90,20 +90,20 @@ export default function Expertise() {
             participants relient les liens de cause à effets et intègrent les
             enjeux climatiques dans leur globalité.
           </p>
-          <p className="text-black font-bold  pt-6 text-2xl">Efficace</p>
-          <p className="text-black   pt-2 pb-12 text-2xl">
+          <p className="text-black font-bold  pt-6 text-2xl px-64 sm:px-12">Efficace</p>
+          <p className="text-black   pt-2 pb-12 text-2xl px-64 sm:px-12">
             Sans culpabiliser et par une compréhension partagée des mécanismes à
             l&apos;œuvre, la Fresque engage les individus dans un échange
             constructif. A l&apos;issue de l&apos;atelier, les participants sont
             motivés et outillés pour agir à leur niveau.
           </p>
-          <p className="text-black font-bold  pt-6 text-3xl">
+          <p className="text-black font-bold  pt-6 text-3xl px-64 sm:px-12">
             Formation énergie climat
           </p>
-          <p className="text-sm italic  pb-12 text-gray-500 text-sm">
+          <p className="text-sm italic  pb-12 text-gray-500 text-sm px-64 sm:px-12">
             Entre 1h et 2h avec présentation PowerPoint
           </p>
-          <p className="text-black   pt-2 pb-12 text-2xl">
+          <p className="text-black   pt-2 pb-12 text-2xl px-64 sm:px-12">
             Vous découvrirez ou redécouvrirez notre « petite » histoire
             d&apos;énergie et de climat. Nous vous inviterons à cette occasion à
             prendre le recul nécessaire afin d&apos;appréhender les enjeux de
@@ -185,6 +185,37 @@ export default function Expertise() {
               <Image
                 priority
                 src="/IMG-20230521-WA0038.jpg"
+                width={1000}
+                height={1000}
+                alt="article"
+                className=""
+              />
+              
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                priority
+                src="/IMG-20230525-WA0004.jpg"
+                width={1000}
+                height={1000}
+                alt="article"
+                className=""
+              />
+              
+            </SwiperSlide> <SwiperSlide>
+              <Image
+                priority
+                src="/IMG-20230521-WA0022.jpg"
+                width={1000}
+                height={1000}
+                alt="article"
+                className=""
+              />
+              
+            </SwiperSlide> <SwiperSlide>
+              <Image
+                priority
+                src="/IMG_20230603_163135.jpg"
                 width={1000}
                 height={1000}
                 alt="article"
