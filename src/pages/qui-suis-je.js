@@ -48,9 +48,9 @@ export default function QuiSuisJe() {
                 <Image
                   src="/IMG-20230512-WA0045.jpg"
                   alt="victor"
-                  width={500}
-                  height={600}
-                  className="sm:hidden mx-auto my-auto sm:px-12 rounded-xl sm:px-5 laptop:hover:scale-125 transition-all transform duration-500"
+                  width={300}
+                  height={450}
+                  className="mr-6 sm:hidden mx-auto my-auto sm:px-12 rounded-xl sm:px-5 laptop:hover:scale-125 transition-all transform duration-500"
                   loading="eager"
                 />
                 <div className="sm:px-12 sm:pt-12 laptop:m-auto laptop:mr-48 tablet:p-12">
@@ -62,7 +62,7 @@ export default function QuiSuisJe() {
                     d&apos;une économie et d&apos;une société désirables, Un&Demi porte
                     haut et fort ses valeurs d&apos;engagement, de pédagogie et
                     d&apos;enthousiasme.<br></br>
-                    <br></br> Chaque jour, Un&Demi est pleinement investit dans
+                    <br></br> Chaque jour, Un&Demi est pleinement investi dans
                     sa mission : accompagner les organisations et les individus
                     dans un monde qui connaît et connaîtra un nombre de
                     soubresauts de plus en plus fréquents et intenses. Ensemble,
@@ -78,7 +78,7 @@ export default function QuiSuisJe() {
                     adaptée aux bouleversements à venir.<br></br>
                     <br></br> Je m&apos;appelle Victor Véron et le sujet énergie
                     climat m&apos;a « pris aux tripes » dès les premiers instants où
-                    j&apos;y est mis sérieusement les pieds. Impossible depuis d&apos;en
+                    j&apos;y ai mis sérieusement les pieds. Impossible depuis d&apos;en
                     sortir. Véritable passion, je mets au service de votre
                     organisation mon expertise énergie climat et mes cellules
                     grises. Hâte de vous rencontrer et de co-construire, avec
@@ -87,8 +87,8 @@ export default function QuiSuisJe() {
                   <Image
                     src="/IMG-20230512-WA0045.jpg"
                     alt="victor"
-                    width={500}
-                    height={600}
+                    width={300}
+                    height={450}
                     className="laptop:hidden tablet:hidden laptopL:hidden laptop4k:hidden mx-auto my-auto sm:px-12 rounded-xl sm:px-5 laptop:hover:scale-125 transition-all transform duration-500"
                     loading="eager"
                   />
