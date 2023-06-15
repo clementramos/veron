@@ -159,6 +159,42 @@ export default function Hero() {
               Partenaire privilégié, il accompagne votre organisation dans la
               transition bas-carbone et l&apos;adaptation à la dérive
               climatique.
+              
+        {" "}
+        <div>
+          <div className="tablet:col-span-3 laptop:col-span-3">
+            <Fade direction="right" triggerOnce={true}>
+              <p className="text-009999 text-left text-4xl tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left laptop:text-left pt-12 uppercase font-bold tracking-wide">
+                UN&DEMI vous accompagne à chaque étape de la mise en place de
+                votre stratégie énergie-climat:
+              </p>{" "}
+            </Fade>
+          </div>
+          <Fade direction="right" delay={1000} triggerOnce={true}>
+            <div className="tablet:col-span-3">
+              <p className="text-black text-left text-2xl text-justify sm:text-lg sm:pt-5 pt-10 tablet:pt-12 tablet:pb-12 laptop:pb-12 laptop:pt-12">
+                <p className="text-left sm:text-left">
+                  • Sensibilisation et formation de l&apos;équipe dédiée
+                </p>
+                <p className="pt-5 text-left sm:text-left">
+                  • Calcul de votre Bilan Carbone
+                </p>
+                <p className="pt-5 text-left sm:text-left">
+                  • Construction de votre feuille de route, plan d&apos;actions
+                </p>
+                <p className="pt-5 text-left sm:text-left">
+                  • Stratégie et trajectoire de réduction d&apos;émissions
+                  (SNBC, QuantiGES, ACT, SBT…)
+                </p>
+                <p className="pt-5 text-left sm:text-left">
+                  {" "}
+                  • Accompagnement de l&apos;action
+                </p>
+              </p>{" "}
+            </div>{" "}
+          </Fade>
+        </div>
+      
               <br></br> Nous vous proposons une approche basée sur les trois
               piliers qui fondent notre identité :
             </p>{" "}
@@ -196,7 +232,7 @@ export default function Hero() {
                   </b>
                   <br></br> Ensemble nous ferons de la physique élémentaire :
                   proportions, additions et autres conversions seront nos
-                  meilleurs alliés. Retour à l&apos;école ! Le problème est
+                  meilleurs alliées. Retour à l&apos;école ! Le problème est
                   physique il se résoudra donc en raisonnant dans le même cadre.
                   Nous manipulerons des Kg, des tonnes, des kWh mais aussi des
                   unités plus exotiques comme des tonnes.km ou encore des
@@ -223,8 +259,8 @@ export default function Hero() {
                   avec enthousiasme et positivité. Le défi est colossal mais il
                   s&apos;agit également d&apos;une chance inédite dans
                   l&apos;histoire de l&apos;être humain de réinventer ses
-                  méthodes de subsistances et d&apos;accès au bonheur. « Je ne
-                  suis pas complètement sûre » que nous serions moins heureux
+                  méthodes de subsistances et d&apos;accès au bonheur. Je ne
+                  suis pas complètement sûr que nous serions moins heureux
                   dans une société sobre et résiliente.{" "}
                 </li>
                 <Image
@@ -355,7 +391,7 @@ export default function Hero() {
             </Swiper> */}
         </div>{" "}
       </div>{" "}
-      <div
+      {/* <div
         id="scroll"
         className="h-fit pb-12 tablet:h-fit laptop:h-fit sm:h-fit sm:pb-10 sm:grid sm:grid-cols-1 bg-white"
       >
@@ -376,7 +412,7 @@ export default function Hero() {
                   • Sensibilisation et formation de l&apos;équipe dédiée
                 </p>
                 <p className="pt-5 text-left sm:text-left">
-                  • Mesures physiques (Bilan Carbone, ACV, émissions évitées)
+                  • Calcul de votre Bilan Carbone
                 </p>
                 <p className="pt-5 text-left sm:text-left">
                   • Construction de votre feuille de route, plan d&apos;actions
@@ -387,7 +423,7 @@ export default function Hero() {
                 </p>
                 <p className="pt-5 text-left sm:text-left">
                   {" "}
-                  • Communication (rédaction de contenu)
+                  • Accompagnement de l&apos;action
                 </p>
               </p>{" "}
               <Fade direction="right" delay={1200} triggerOnce={true}>
@@ -402,7 +438,7 @@ export default function Hero() {
             </div>{" "}
           </Fade>
         </div>
-      </div>{" "}
+      </div>{" "} */}
       {/* </div>{" "} */}
       {/* </div>{" "} */}
       {/* </motion.div> */}
@@ -414,11 +450,10 @@ export default function Hero() {
           <div className="px-64 sm:px-12">
             <Fade direction="up" triggerOnce={true}>
               <p className="text-009999 text-center text-[3rem] sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left tablet:text-4xl tablet:pt-24 laptop:text-left laptop:pt-24 uppercase font-bold tracking-wide">
-                articles à lire pour mieux comprendre les enjeux de la
-                transition énergétique et climatique{" "}
+                articles 
               </p>{" "}
             </Fade>
-            <Fade direction="up" delay={500} triggerOnce={true}>
+            {/* <Fade direction="up" delay={500} triggerOnce={true}>
               <p className="text-black text-center text-xl sm:hidden sm:pr-5 tablet:text-left laptop:text-left laptop:px-0 pt-5 px-64 tablet:px-0">
                 La transition énergétique et climatique est un sujet
                 d&apos;actualité majeur. <br />
@@ -426,7 +461,7 @@ export default function Hero() {
                 important de s&apos;informer et de se tenir au courant des
                 dernières avancées dans ce domaine.{" "}
               </p>
-            </Fade>
+            </Fade> */}
           </div>
         </div>{" "}
         <div class="pt-12 pb-12 sm:pb-0 bg-white flex justify-center items-center sm:grid sm:grid-cols-1 sm:pt-2">
@@ -671,7 +706,7 @@ export default function Hero() {
             </p>{" "}
             <p className="text-black text-center sm:text-left text-xl tablet:text-left sm:text-lg sm:pt-5 pt-5 laptop:text-left">
               Pour toute question sur UN&DEMI, ou pour une demande concernant un
-              accompagnement particulier, contactez-nous.
+              accompagnement particulier, contactez-mpi.
             </p>
           </div>
         </div>{" "}
