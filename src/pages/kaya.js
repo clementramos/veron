@@ -65,8 +65,9 @@ export default function Expertise() {
               </li>
               <li>
                 <p className="text-black  ml-2 pt-2 text-2xl">
+                  Augmenter l&apos;efficacité énergétique des machines(
                   Diminuer la quantité d&apos;énergie nécessaire pour générer 1€
-                  de PIB (efficacité énergétique)
+                  de PIB)
                 </p>
               </li>
               <li>
@@ -81,9 +82,9 @@ export default function Expertise() {
                 </p>
               </li>
             </ol>
-            <p className="text-black italic ml-2 pt-2 text-2xl">
+            {/* <p className="text-black italic ml-2 pt-2 text-2xl">
               kg CO2eq = kg CO2eq/kWh x kWh/€ x €/hab x hab
-            </p>
+            </p> */}
             <p className="text-black  ml-2 pt-2 text-2xl">
               Il est clair que les deux dernières options de sont pas
               réjouissantes. C&apos;est pourquoi il est urgent de plancher sur

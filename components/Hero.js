@@ -258,7 +258,7 @@ export default function Hero() {
                   anxiogènes. Il est indispensable selon nous de les aborder
                   avec enthousiasme et positivité. Le défi est colossal mais il
                   s&apos;agit également d&apos;une chance inédite dans
-                  l&apos;histoire de l&apos;être humain de réinventer ses
+                  l&apos;histoire de l&apos;humanité de réinventer ses
                   méthodes de subsistances et d&apos;accès au bonheur. Je ne
                   suis pas complètement sûr que nous serions moins heureux
                   dans une société sobre et résiliente.{" "}

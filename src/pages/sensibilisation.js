@@ -86,8 +86,8 @@ export default function Expertise() {
             sensibiliser les participants aux changements climatiques. Son
             approche ludique et pédagogique permet à tous les publics de
             s&apos;approprier le sujet des changements climatiques et vise à
-            éviter une descente verticale du savoir. Durant l&apos;atelier, les
-            participants relient les liens de cause à effets et intègrent les
+            éviter une descente verticale du savoir. Les
+            participants construisent les liens de cause à effets et intègrent les
             enjeux climatiques dans leur globalité.
           </p>
           <p className="text-black font-bold  pt-6 text-2xl px-64 sm:px-12">Efficace</p>

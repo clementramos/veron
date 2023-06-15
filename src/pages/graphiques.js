@@ -100,7 +100,7 @@ export default function Expertise() {
                 <p className="text-black  ml-2 pt-2 text-2xl">
                   Le graphique ci-dessous démontre la proportionnalité entre
                   l&apos;évolution du PIB mondiale et celle de la consommation
-                  d&apos;énergie. « Donnez-moi le PIB mondiale sur une année
+                  d&apos;énergie. « Donnez-moi le PIB mondial sur une année
                   donnée, je vous donnerai la quantité d&apos;énergie que vous
                   avez employé sur cette même année »
                 </p>
@@ -132,7 +132,7 @@ export default function Expertise() {
               </li>
               <li>
                 <p className="text-black  ml-2 pt-2 text-2xl">
-                  L&apos;usage exponentielle des énergie fossiles entraine
+                  L&apos;usage exponentiel des énergie fossiles entraine
                   mécaniquement une augmentation exponentielle de la
                   concentration atmosphérique en CO 2 . Après 10 000 ans de
                   stabilité parfaite, on observe une véritable explosion de
@@ -160,7 +160,7 @@ export default function Expertise() {
                   puis l&apos;agriculture et l&apos;élevage, la température moyenne
                   globale de la terre augmente considérablement sur une période
                   de temps très courte (150 ans). Nous évaluons aujourd&apos;hui à
-                  +1.2 °C par rapport à l&apos;ère près-industrielle (1850-1900)
+                  +1.2 °C par rapport à l&apos;ère préindustrielle (1850-1900)
                   l&apos;augmentation de température causée par nos activités.
                 </p>
                 <Image

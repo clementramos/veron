@@ -228,7 +228,7 @@ export default function Navbar() {
                                         )}
                                       >
                                         <p className="text-009999">
-                                          Energie climat en 6 graphiques{" "}
+                                          Energie climat en graphiques{" "}
                                         </p>
                                       </Link>
                                     )}
