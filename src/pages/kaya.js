@@ -91,14 +91,8 @@ export default function Expertise() {
               les deux premières : décarboner l&apos;économie mondiale.
             </p>
           </p>
-          <Image
-            className="ml-12 pt-12 pb-12 sm:mx-auto"
-            src="/kaya1.PNG"
-            alt="équation de kaya"
-            width={800}
-            height={200}
-          />
-          <button className="ml-12 pt-2 bg-009999 border rounded-md p-2">
+          
+          <button className="ml-12 mt-12 bg-009999 border rounded-md p-2">
             <Link href="/contact" className="uppercase text-white">
               être recontacté{" "}
             </Link>{" "}

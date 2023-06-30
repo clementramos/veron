@@ -116,11 +116,26 @@ export default function Navbar() {
                                         )}
                                       >
                                         <p className="text-009999">
-                                          Sensibilisation et formation{" "}
+                                          Fresque du climat{" "}
                                         </p>
                                       </Link>
                                     )}
                                   </Menu.Item>
+                                  {/* <Menu.Item>
+                                    {({ active }) => (
+                                      <Link
+                                        href="/sensibilisation"
+                                        className={classNames(
+                                          active ? "bg-gray-100" : "",
+                                          "block px-2 py-2"
+                                        )}
+                                      >
+                                        <p className="text-009999">
+                                          Formations{" "}
+                                        </p>
+                                      </Link>
+                                    )}
+                                  </Menu.Item> */}
                                   <Menu.Item>
                                     {({ active }) => (
                                       <Link
@@ -154,6 +169,21 @@ export default function Navbar() {
                                   <Menu.Item>
                                     {({ active }) => (
                                       <Link
+                                        href="/strategies"
+                                        className={classNames(
+                                          active ? "bg-gray-100" : "",
+                                          "block px-2 py-2"
+                                        )}
+                                      >
+                                        <p className="text-009999">
+                                          Les stratégies{" "}
+                                        </p>
+                                      </Link>
+                                    )}
+                                  </Menu.Item>
+                                  {/* <Menu.Item>
+                                    {({ active }) => (
+                                      <Link
                                         href="/strategie-neutralite-carbone"
                                         className={classNames(
                                           active ? "bg-gray-100" : "",
@@ -180,7 +210,7 @@ export default function Navbar() {
                                         </p>
                                       </Link>
                                     )}
-                                  </Menu.Item>
+                                  </Menu.Item> */}
                                 </Menu.Items>
                               </Transition>
                             </Menu>

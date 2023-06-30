@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import { useInView } from "react-intersection-observer";
@@ -151,81 +151,140 @@ export default function Hero() {
         className="h-full sm:h-full sm:pb-10 tablet:h-full laptop:h-full bg-white sm:grid sm:grid-cols-1"
       >
         <div className="px-64 sm:px-12 tablet:px-12 ">
-          <Fade direction="left" triggerOnce={true}>
+          <Zoom triggerOnce={true}>
             <p className="text-009999 text-left text-[3rem] tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left laptop:text-left pt-12 uppercase font-bold tracking-wide">
               UN&DEMI est un cabinet de conseil indépendant.
             </p>{" "}
             <p className="text-009999 text-left text-xl sm:text-sm sm:w-full sm:pr-5 sm:text-left tablet:font-thin tablet:text-left laptop:text-left sm:font-thin font-bold tracking-wide">
               Partenaire privilégié, il accompagne votre organisation dans la
               transition bas-carbone et l&apos;adaptation à la dérive
-              climatique.
-              
-        {" "}
-        <div>
-          <div className="tablet:col-span-3 laptop:col-span-3">
-            <Fade direction="right" triggerOnce={true}>
-              <p className="text-009999 text-left text-4xl tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left laptop:text-left pt-12 uppercase font-bold tracking-wide">
-                UN&DEMI vous accompagne à chaque étape de la mise en place de
-                votre stratégie énergie-climat:
-              </p>{" "}
-            </Fade>
-          </div>
-          <Fade direction="right" delay={1000} triggerOnce={true}>
-            <div className="tablet:col-span-3">
-              <p className="text-black text-left text-2xl text-justify sm:text-lg sm:pt-5 pt-10 tablet:pt-12 tablet:pb-12 laptop:pb-12 laptop:pt-12">
-                <p className="text-left sm:text-left">
-                  • Sensibilisation et formation de l&apos;équipe dédiée
-                </p>
-                <p className="pt-5 text-left sm:text-left">
-                  • Calcul de votre Bilan Carbone
-                </p>
-                <p className="pt-5 text-left sm:text-left">
-                  • Construction de votre feuille de route, plan d&apos;actions
-                </p>
-                <p className="pt-5 text-left sm:text-left">
-                  • Stratégie et trajectoire de réduction d&apos;émissions
-                  (SNBC, QuantiGES, ACT, SBT…)
-                </p>
-                <p className="pt-5 text-left sm:text-left">
-                  {" "}
-                  • Accompagnement de l&apos;action
-                </p>
-              </p>{" "}
-            </div>{" "}
-          </Fade>
-        </div>
-      
+              climatique.{" "}
+              <div>
+                <div className="tablet:col-span-3 laptop:col-span-3">
+                  <Zoom triggerOnce={true}>
+                    <p className="text-009999 text-left text-4xl tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left laptop:text-left pt-12 uppercase font-bold tracking-wide">
+                      UN&DEMI vous accompagne à chaque étape de la mise en place
+                      de votre stratégie énergie-climat:
+                    </p>{" "}
+                  </Zoom>
+                </div>
+                <Zoom triggerOnce={true}>
+                  <div className="tablet:col-span-3">
+                    <p className="text-black text-left text-2xl text-justify sm:text-lg sm:pt-5 pt-10 tablet:pt-12 tablet:pb-12 laptop:pb-12 laptop:pt-12">
+                      <p className="text-left sm:text-left">
+                        • Sensibilisation et formation de l&apos;équipe dédiée
+                      </p>
+                      <p className="pt-5 text-left sm:text-left">
+                        • Calcul de votre Bilan Carbone
+                      </p>
+                      <p className="pt-5 text-left sm:text-left">
+                        • Construction de votre feuille de route, plan
+                        d&apos;actions
+                      </p>
+                      <p className="pt-5 text-left sm:text-left">
+                        • Stratégie et trajectoire de réduction d&apos;émissions
+                        (SNBC, QuantiGES, ACT, SBT…)
+                      </p>
+                      <p className="pt-5 text-left sm:text-left">
+                        {" "}
+                        • Accompagnement de l&apos;action
+                      </p>
+                    </p>{" "}
+                  </div>{" "}
+                </Zoom>
+              </div>
               <br></br> Nous vous proposons une approche basée sur les trois
               piliers qui fondent notre identité :
             </p>{" "}
-          </Fade>
+          </Zoom>
 
-          <p className="text-black text-justify pb-12 pt-20 text-2xl sm:text-lg">
+          <div className="grid grid-cols-2 gap-4 sm:grid sm:grid-cols-1">
+            <p className="text-black text-justify pb-12 pt-20 text-2xl sm:text-lg">
+              <b className="uppercase text-009999 sm:text-xl">La pédagogie. </b>{" "}
+              <br></br>
+              Le sujet énergie-climat est tentaculaire et complexe. Nous vous
+              transmettons les bons ordres de grandeurs vous permettant de
+              structurer et de clarifier le phénomène énergie climat dans votre
+              esprit. L&apos;objectif : vous approprier le sujet et devenir un
+              acteur convaincu de votre propre transition. Le tout, accompagné
+              de la rigueur et de la bienveillance indispensable.
+            </p>
+            <Image
+              src="/salle de classe blanc.jpg"
+              alt="salle de classe"
+              width={400}
+              height={400}
+              className="mx-auto my-auto"
+            />{" "}
+            <Image
+              src="/physique.jpg"
+              alt="physique"
+              width={400}
+              height={400}
+              className="mx-auto my-auto"
+            />{" "}
+            <p className="text-black text-justify pb-12 pt-20 text-2xl sm:text-lg">
+              <b className="uppercase text-009999 sm:text-xl">La Physique.</b>{" "}
+              <br></br>
+              Ensemble nous ferons de la physique élémentaire : proportions,
+              additions et autres conversions seront nos meilleurs alliées.
+              Retour à l&apos;école ! Le problème est physique il se résoudra
+              donc en raisonnant dans le même cadre. Nous manipulerons des Kg,
+              des tonnes, des kWh mais aussi des unités plus exotiques comme des
+              tonnes.km ou encore des passagers.km{" "}
+            </p>
+            <p className="text-black text-justify pb-12 pt-20 text-2xl sm:text-lg">
+              <b className="uppercase text-009999 sm:text-xl">
+                De l&apos;enthousiasme à l&apos;action.
+              </b>{" "}
+              <br></br>
+              Le changement climatique et la fin de l&apos;abondance énergétique
+              ont et auront des conséquences qui touchent directement à nos
+              existences. En cela, ces sujets sont anxiogènes. Il est
+              indispensable selon nous de les aborder avec enthousiasme et
+              positivité. Le défi est colossal mais il s&apos;agit également
+              d&apos;une chance inédite dans l&apos;histoire de l&apos;humanité
+              de réinventer ses méthodes de subsistances et d&apos;accès au
+              bonheur. Je ne suis pas complètement sûr que nous serions moins
+              heureux dans une société sobre et résiliente.{" "}
+            </p>
+            <Image
+              src="/enthousiasme 2.jpg"
+              alt="enthousiasme"
+              width={400}
+              height={400}
+              className="mx-auto my-auto"
+            />{" "}
+          </div>
+
+          {/* <p className="text-black text-justify pb-12 pt-20 text-2xl sm:text-lg">
             <ol className="list-none list-inside">
-              <Fade direction="left" delay={500} triggerOnce={true}>
+              <Zoom triggerOnce={true}>
                 <li className="">
                   <b className="uppercase text-009999 sm:text-xl">
-                    La pédagogie.
+                    De l&apos;enthousiasme à l&apos;action.
                   </b>{" "}
                   <br></br>
-                  Le sujet énergie-climat est tentaculaire et complexe. Nous
-                  vous transmettons les bons ordres de grandeurs vous permettant
-                  de structurer et de clarifier le phénomène énergie climat dans
-                  votre esprit. L&apos;objectif : vous approprier le sujet et
-                  devenir un acteur convaincu de votre propre transition. Le
-                  tout, accompagné de la rigueur et de la bienveillance
-                  indispensables à la bonne marche d&apos;un projet de cette
-                  nature.{" "}
+                  Le changement climatique et la fin de l&apos;abondance
+                  énergétique ont et auront des conséquences qui touchent
+                  directement à nos existences. En cela, ces sujets sont
+                  anxiogènes. Il est indispensable selon nous de les aborder
+                  avec enthousiasme et positivité. Le défi est colossal mais il
+                  s&apos;agit également d&apos;une chance inédite dans
+                  l&apos;histoire de l&apos;humanité de réinventer ses méthodes
+                  de subsistances et d&apos;accès au bonheur. Je ne suis pas
+                  complètement sûr que nous serions moins heureux dans une
+                  société sobre et résiliente.{" "}
                 </li>
                 <Image
-                  src="/salle de classe blanc.jpg"
-                  alt="salle de classe"
+                  src="/enthousiasme 2.jpg"
+                  alt="enthousiasme"
                   width={250}
                   height={250}
                   className="mx-auto py-12"
                 />{" "}
-              </Fade>
-              <Fade direction="left" delay={1000} triggerOnce={true}>
+              </Zoom>
+              <Zoom triggerOnce={true}>
                 <li className="pt-5">
                   <b className="uppercase text-009999 sm:text-xl">
                     La Physique.
@@ -245,8 +304,8 @@ export default function Hero() {
                   height={250}
                   className="mx-auto py-12"
                 />{" "}
-              </Fade>
-              <Fade direction="left" delay={1500} triggerOnce={true}>
+              </Zoom>
+              <Zoom triggerOnce={true}>
                 <li className="pt-5">
                   <b className="uppercase text-009999 sm:text-xl">
                     De l&apos;enthousiasme à l&apos;action.
@@ -258,10 +317,10 @@ export default function Hero() {
                   anxiogènes. Il est indispensable selon nous de les aborder
                   avec enthousiasme et positivité. Le défi est colossal mais il
                   s&apos;agit également d&apos;une chance inédite dans
-                  l&apos;histoire de l&apos;humanité de réinventer ses
-                  méthodes de subsistances et d&apos;accès au bonheur. Je ne
-                  suis pas complètement sûr que nous serions moins heureux
-                  dans une société sobre et résiliente.{" "}
+                  l&apos;histoire de l&apos;humanité de réinventer ses méthodes
+                  de subsistances et d&apos;accès au bonheur. Je ne suis pas
+                  complètement sûr que nous serions moins heureux dans une
+                  société sobre et résiliente.{" "}
                 </li>
                 <Image
                   src="/enthousiasme 2.jpg"
@@ -270,9 +329,9 @@ export default function Hero() {
                   height={250}
                   className="mx-auto py-12"
                 />{" "}
-              </Fade>
+              </Zoom>
             </ol>
-          </p>
+          </p> */}
           {/* <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -335,13 +394,13 @@ export default function Hero() {
               <span ref={progressContent}></span>
             </div>
           </Swiper> */}
-          <Fade direction="left" delay={1000} triggerOnce={true}>
+          {/* <Zoom triggerOnce={true}>
             <button className="bg-009999 border rounded-md p-2 mb-12">
               <Link href="/sensibilisation" className="uppercase text-white">
                 Découvrez nos champs d&apos;expertises{" "}
               </Link>{" "}
             </button>{" "}
-          </Fade>
+          </Zoom> */}
           {/* <Swiper
               navigation={true}
               modules={[Navigation]}
@@ -398,14 +457,14 @@ export default function Hero() {
         {" "}
         <div>
           <div className="px-64 sm:px-12 tablet:col-span-3 laptop:col-span-3">
-            <Fade direction="right" triggerOnce={true}>
+            <Zoom triggerOnce={true}>
               <p className="text-009999 text-left text-[3rem] tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left laptop:text-left pt-12 uppercase font-bold tracking-wide">
                 UN&DEMI vous accompagne à chaque étape de la mise en place de
                 votre stratégie énergie-climat:
               </p>{" "}
-            </Fade>
+            </Zoom>
           </div>
-          <Fade direction="right" delay={1000} triggerOnce={true}>
+          <Zoom triggerOnce={true}>
             <div className="px-64 sm:px-12 tablet:col-span-3">
               <p className="text-black text-left text-2xl text-justify sm:text-lg sm:pt-5 pt-10 tablet:pt-12 tablet:pb-12 laptop:pb-12 laptop:pt-12">
                 <p className="text-left sm:text-left">
@@ -426,7 +485,7 @@ export default function Hero() {
                   • Accompagnement de l&apos;action
                 </p>
               </p>{" "}
-              <Fade direction="right" delay={1200} triggerOnce={true}>
+              <Zoom delay={1200} triggerOnce={true}>
                 <div className="text-left sm:text-left pt-12">
                   <button className="bg-009999 border rounded-md p-2 mb-12 text-right">
                     <Link href="/contact" className="uppercase text-white">
@@ -434,9 +493,9 @@ export default function Hero() {
                     </Link>{" "}
                   </button>{" "}
                 </div>
-              </Fade>
+              </Zoom>
             </div>{" "}
-          </Fade>
+          </Zoom>
         </div>
       </div>{" "} */}
       {/* </div>{" "} */}
@@ -448,12 +507,12 @@ export default function Hero() {
       >
         <div className="grid grid-row-2 sm:grid sm:grid-cols-1">
           <div className="px-64 sm:px-12">
-            <Fade direction="up" triggerOnce={true}>
+            <Zoom triggerOnce={true}>
               <p className="text-009999 text-center text-[3rem] sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left tablet:text-4xl tablet:pt-24 laptop:text-left laptop:pt-24 uppercase font-bold tracking-wide">
-                articles 
+                articles
               </p>{" "}
-            </Fade>
-            {/* <Fade direction="up" delay={500} triggerOnce={true}>
+            </Zoom>
+            {/* <Zoom direction="up" delay={500} triggerOnce={true}>
               <p className="text-black text-center text-xl sm:hidden sm:pr-5 tablet:text-left laptop:text-left laptop:px-0 pt-5 px-64 tablet:px-0">
                 La transition énergétique et climatique est un sujet
                 d&apos;actualité majeur. <br />
@@ -461,11 +520,11 @@ export default function Hero() {
                 important de s&apos;informer et de se tenir au courant des
                 dernières avancées dans ce domaine.{" "}
               </p>
-            </Fade> */}
+            </Zoom> */}
           </div>
         </div>{" "}
         <div class="pt-12 pb-12 sm:pb-0 bg-white flex justify-center items-center sm:grid sm:grid-cols-1 sm:pt-2">
-          <Fade direction="left" delay={500} triggerOnce={true}>
+          <Zoom triggerOnce={true}>
             <Link href="/histoire-energie-climat">
               <div class="w-64 sm:w-fit sm:m-6 p-6 mx-10 bg-white rounded-xl shadow-xl hover:scale-105 transition-all transform duration-500">
                 <Image
@@ -526,8 +585,8 @@ export default function Hero() {
                 </div>
               </div>
             </Link>{" "}
-          </Fade>
-          <Fade direction="up" delay={500} triggerOnce={true}>
+          </Zoom>
+          <Zoom triggerOnce={true}>
             <Link href="/decarbonation">
               <div class="w-64 sm:w-fit sm:m-6 p-6 mx-10 bg-white rounded-xl shadow-xl hover:scale-105 transition-all transform duration-500">
                 <Image
@@ -590,8 +649,8 @@ export default function Hero() {
                 </div>
               </div>
             </Link>
-          </Fade>
-          <Fade direction="right" delay={500} triggerOnce={true}>
+          </Zoom>
+          <Zoom triggerOnce={true}>
             <Link href="/arguments-transition">
               <div class="w-64 sm:w-fit sm:m-6 p-6 mx-10 bg-white rounded-xl shadow-xl hover:scale-105 transition-all transform duration-500">
                 <Image src="/eau.jpg" width={300} height={300} alt="article" />
@@ -645,7 +704,7 @@ export default function Hero() {
                 </div>
               </div>
             </Link>
-          </Fade>
+          </Zoom>
           {/* <div class="w- sm:m-6 p-6 mx-10 bg-white rounded-xl shadow-xl hover:scale-105 transition-all transform duration-500">
             <Image
               src="/2022_11_15_evolution_mondiale_past.png"

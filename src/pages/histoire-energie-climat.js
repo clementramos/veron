@@ -39,89 +39,89 @@ export default function Expertise() {
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
-          <p className="text-009999 text-4xl font-bold uppercase ml-12 pt-12 mb-12">
+          <p className="text-009999 text-4xl font-bold uppercase pt-12 mb-12">
             La &quot;petite&quot; histoire énergie climat
           </p>
-          <p className="text-black mx-12 pt-2 text-2xl">
-            {" "}
-            <p className="text-black  ml-2 pt-2 text-2xl">
-              A partir du XVIII° siècle, l’être humain commence l’exploitation
-              industrielle du charbon. Viendront par la suite celles du pétrole
-              (1850) puis celle du gaz (1950). Ces énergies primaires fossiles
-              sont remarquablement concentrées. Elles nous ont permis d’accéder
-              à l’abondance énergétique. Cette dernière est la cause profonde de
-              l’explosion de la démographie mondiale, de l’augmentation de notre
-              espérance et de notre confort de vie. <br></br>
-              <div className="py-12 grid grid-cols-3 sm:grid sm:grid-cols-1 sm:gap-8">
-                <Image src="/gaz 3.jpg" alt="gaz" width={300} height={300} />
-                <Image
-                  src="/charbon 1.png"
-                  alt="charbon"
-                  width={300}
-                  height={300}
-                />
-                <Image
-                  src="/pétrole.jpg"
-                  alt="petrole"
-                  width={300}
-                  height={300}
-                />
-              </div>
-              <br></br>Lors de leur combustion (utilisation) ces énergies
-              primaires fossiles émettent du gaz carbonique (CO2). Cette
-              molécule est un gaz à effet de serre (GES) chimiquement stable.{" "}
-              <br></br>
-              <div className="py-12">
-                <Image
-                  src="/CO2 2.png"
-                  alt="co2"
-                  width={300}
-                  height={300}
-                  className="mx-auto"
-                />
-              </div>
-              <br></br>
-              L’effet de serre est un phénomène naturel par lequel certains gaz
-              présents dans l’atmosphère retiennent la chaleur en absorbant le
-              rayonnement infra-rouge émis par la Terre. Ce phénomène a permis
-              l’apparition de la vie sur Terre mais aujourd’hui l’être humain
-              ajoute à ce phénomène naturel une composante supplémentaire. On
-              appelle cette composante supplémentaire « effet de serre
-              additionnel ». De par ses activités et plus précisément son
-              recours massif aux énergies d’origine fossile, l’être humain
-              extrait des hydrocarbures (molécules composées d’atomes de carbone
-              et d’hydrogène) de la Terre et en les exploitant, rejette du CO2,
-              mais pas que…, dans l’atmosphère.<br></br>{" "}
-              <div className="py-12">
-                <Image
-                  src="/les GES Kyoto.png"
-                  alt="ges"
-                  width={300}
-                  height={300}
-                  className="mx-auto"
-                />
-              </div>
-              <br></br> Le bilan énergétique de la Terre est alors déséquilibré.
+
+          <div className="grid grid-cols-2 gap-4 sm:grid sm:grid-cols-1">
+            <p className="text-black text-justify pb-12 pt-20 text-2xl sm:text-lg">
+              A partir du XVIII° siècle, l&apos;être humain commence
+              l&apos;exploitation industrielle du charbon. Viendront par la
+              suite celles du pétrole (1850) puis celle du gaz (1950). Ces
+              énergies primaires fossiles sont remarquablement concentrées.
+              Elles nous ont permis d&apos;accéder à l&apos;abondance
+              énergétique. Cette dernière est la cause profonde de
+              l&apos;explosion de la démographie mondiale, de
+              l&apos;augmentation de notre espérance et de notre confort de vie.
+            </p>
+            <Image
+              src="/charbon 1.png"
+              alt="charbon"
+              width={300}
+              height={300}
+              className="mx-auto my-auto"
+            />
+            <Image
+              src="/CO2 2.png"
+              alt="co2"
+              width={300}
+              height={300}
+              className="mx-auto my-auto"
+            />
+            <p className="text-black text-justify pb-12 pt-20 text-2xl sm:text-lg">
+              Lors de leur combustion (utilisation) ces énergies primaires
+              fossiles émettent du gaz carbonique (CO2). Cette molécule est un
+              gaz à effet de serre (GES) chimiquement stable.{" "}
+            </p>
+            <p className="text-black text-justify pb-12 pt-20 text-2xl sm:text-lg">
+              L&apos;effet de serre est un phénomène naturel par lequel certains
+              gaz présents dans l&apos;atmosphère retiennent la chaleur en
+              absorbant le rayonnement infra-rouge émis par la Terre. Ce
+              phénomène a permis l&apos;apparition de la vie sur Terre mais
+              aujourd&apos;hui l&apos;être humain ajoute à ce phénomène naturel
+              une composante supplémentaire. On appelle cette composante
+              supplémentaire « effet de serre additionnel ». De par ses
+              activités et plus précisément son recours massif aux énergies
+              d&apos;origine fossile, l&apos;être humain extrait des
+              hydrocarbures (molécules composées d&apos;atomes de carbone et
+              d&apos;hydrogène) de la Terre et en les exploitant, rejette du
+              CO2, mais pas que…, dans l&apos;atmosphère.
+            </p>
+            <Image
+              src="/les GES Kyoto.png"
+              alt="ges"
+              width={300}
+              height={300}
+              className="mx-auto my-auto"
+            />{" "}
+            <Image
+              src="/évènements climatiques extremes.png"
+              alt="evenements climatiques"
+              width={300}
+              height={300}
+              className="mx-auto my-auto"
+            />
+            <p className="text-black text-justify pb-12 pt-20 text-2xl sm:text-lg">
+            Le bilan énergétique de la Terre est alors déséquilibré.
               La température moyenne globale de la planète augmente et les
               phénomènes climatiques extrêmes voient leur intensité et leur
-              fréquence s’accentuer.<br></br>{" "}
-              <div className="py-12">
-                <Image
-                  src="/évènements climatiques extremes.png"
-                  alt="evenements climatiques"
-                  width={300}
-                  height={300}
-                  className="mx-auto"
-                />
-              </div>
-              <br></br>L’être humain a, à ce jour, rejeté dans l’atmosphère près
-              de 2 500 Gt de CO2 depuis 1850 augmentant par voie de conséquence
-              la température moyenne globale de la Terre de +1.2 °C (2023) par
-              rapport à l’aire préindustrielle. <Link href="/graphiques" className="text-009999">Source.</Link> <br></br> <br></br>Dans ce contexte,
-              comment maintenir un confort de vie digne et serein pour chacun ?
-              Il est urgent d’agir en transformant notre mode de vie, en
-              réduisant drastiquement nos émissions de gaz à effet de serre, en
-              stoppant la destruction du vivant qui est à l’œuvre.
+              fréquence s&apos;accentuer.
+            </p>
+          </div>
+
+            <p className="text-black text-justifypt-2 text-2xl">
+              <br></br>L&apos;être humain a, à ce jour, rejeté dans
+              l&apos;atmosphère près de 2 500 Gt de CO2 depuis 1850 augmentant
+              par voie de conséquence la température moyenne globale de la Terre
+              de +1.2 °C (2023) par rapport à l&apos;aire préindustrielle.{" "}<br></br>
+              <Link href="/graphiques" className="text-009999">
+                Source.
+              </Link>{" "}
+              <br></br> <br></br>Dans ce contexte, comment maintenir un confort
+              de vie digne et serein pour chacun ? Il est urgent d&apos;agir en
+              transformant notre mode de vie, en réduisant drastiquement nos
+              émissions de gaz à effet de serre, en stoppant la destruction du
+              vivant qui est à l&apos;œuvre.
             </p>
             {/* <div className="grid grid-cols-2 gap-8">
               <Image
@@ -226,11 +226,10 @@ export default function Expertise() {
                 Illustrations
               </SwiperSlide>{" "}
             </Swiper> */}
-            <p className="text-009999 italic ml-2 pt-12 text-2xl">
+            <p className="text-009999 italic pt-12 text-2xl">
               Publié le 15/05/2023{" "}
             </p>
-          </p>
-          <button className="ml-12 mt-24 bg-009999 border rounded-md p-2">
+          <button className="mt-24 bg-009999 border rounded-md p-2">
             <Link href="/#articles" className="uppercase text-white">
               revenir aux articles{" "}
             </Link>{" "}

@@ -200,114 +200,107 @@ export default function Expertise() {
             </SwiperSlide>
           </Swiper> */}
           <div>
-            {" "}
+            <p className="text-black font-bold text-center mb-6">
+              Décomposition de l&apos;empreinte carbone de la France par secteur
+            </p>{" "}
             <Image
               src="/Eq4dToAWMAAMGN-.jfif"
               alt="graphique france"
               width={1200}
               height={500}
-              className="mx-auto py-4"
+              className="mx-auto mb-24"
             />
           </div>
-          <div className="grid grid-cols-2 gap-4 sm:grid sm:grid-cols-1 sm:gap-2 tablet:grid tablet:grid-cols-1 tablet:gap-2">
+          <div className="">
+            <p className="text-black font-bold text-center mb-6">Empreinte carbone individuelle moyenne en France en 2020</p>
             <Image
               src="/Infographie-Carree-Bon-Pote-INVBC3-768x768.webp"
               alt="graphique france"
               width={500}
               height={500}
-              className="mx-auto py-4"
+              className="mx-auto mb-24"
             />
+            <p className="text-black font-bold text-center mb-6">Comparaison de l&apos;empreinte carbone des pays Européens</p>
             <Image
               src="/UE-CARBON-FOOTPRINT-1024x576.webp"
               alt="graphique france"
-              width={500}
-              height={500}
-              className="mx-auto py-4"
+              width={1000}
+              height={1000}
+              className="mx-auto mb-24"
             />
+            <p className="text-black font-bold text-center mb-6">Intensité carbone de l&apos;électricité par KWh produit des principaux pays Européens en 2020</p>
             <Image
               src="/EvYwOhVWYAQdu1X.jfif"
               alt="graphique france"
-              width={500}
+              width={1000}
               height={500}
-              className="mx-auto py-4"
+              className="mx-auto mb-24"
             />
+            <p className="text-black font-bold text-center mb-6">Ordres de grandeurs des réductions d&apos;émissions nécessaires</p>
             <Image
               src="/Ev86arDWYAA6Oea.jfif"
               alt="graphique france"
               width={500}
               height={500}
-              className="mx-auto py-4"
+              className="mx-auto mb-24"
             />
+            <p className="text-black font-bold text-center mb-6">Intensité carbone des aliments sur l&apos;ensemble de la chaîne d&apos;approvisionnement</p>
             <Image
               src="/ALIMENTATION-BON-POTE.webp"
               alt="graphique france"
-              width={500}
+              width={800}
               height={500}
-              className="mx-auto py-4"
+              className="mx-auto mb-24"
             />
+            <p className="text-black font-bold text-center mb-6">Intensité carbone des aliments pour 100 g de protéines sur l&apos;ensemble de la chaîne d&apos;approvisionnement</p>
             <Image
               src="/E3Q7WoMXoAIw7PG.png"
               alt="graphique france"
-              width={500}
+              width={1000}
               height={500}
-              className="mx-auto py-4"
+              className="mx-auto mb-24"
             />
+            <p className="text-black font-bold text-center mb-6">+2 C° ce n&apos;est rien ! A BON ?!</p>
             <Image
               src="/E0cnaZcWYAEiHW5.jfif"
               alt="graphique france"
               width={500}
               height={500}
-              className="mx-auto py-4"
+              className="mx-auto mb-24"
             />
+            <p className="text-black font-bold text-center mb-6">+2 C° ce n&apos;est rien ! A BON ?! bis</p>
             <Image
               src="/EzUoFHoUUAcxDck.jfif"
               alt="graphique france"
               width={500}
               height={500}
-              className="mx-auto py-4"
+              className="mx-auto mb-24"
             />
-            <Image
-              src="/ExEuvw4WQAISBvc.jfif"
-              alt="graphique france"
-              width={500}
-              height={500}
-              className="mx-auto py-4"
-            />
+            <p className="text-black font-bold text-center mb-6">Trajectoires de réduction d&apos;émissions pour respecter les accords de Paris</p>
             <Image
               src="/PathwaysOurWolrdinData.webp"
               alt="graphique france"
-              width={500}
+              width={800}
               height={500}
-              className="mx-auto py-4"
+              className="mx-auto mb-24"
             />
+            <p className="text-black font-bold text-center mb-6">La sixième extinction massive est en cours</p>
             <Image
               src="/E4ZECubXIAAcZ-U.jfif"
               alt="graphique france"
-              width={500}
+              width={900}
               height={500}
-              className="mx-auto py-4"
+              className="mx-auto mb-24"
             />
+            <p className="text-black font-bold text-center mb-6">Le vélo est le mode incontournable de transport de demain</p>
             <Image
               src="/E6FKJZdX0AAC6VV.jfif"
               alt="graphique france"
-              width={500}
+              width={700}
               height={500}
-              className="mx-auto py-4"
+              className="mx-auto mb-24"
             />
-            <Image
-              src="/image-45-1024x589.webp"
-              alt="graphique france"
-              width={500}
-              height={500}
-              className="mx-auto py-4"
-            />
-            <Image
-              src="/image-40-1024x596.webp"
-              alt="graphique france"
-              width={500}
-              height={500}
-              className="mx-auto py-4"
-            />
+           
           </div>
           <p className="text-009999 italic ml-12 pt-12 text-2xl">
             Publié le 27/05/2023{" "}
