@@ -8,7 +8,8 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { motion, useTransform, MotionValue, useAnimation } from "framer-motion";
 import Navbar from "./Navbar";
-import { Autoplay, Pagination } from "swiper";
+import { ParallaxBanner } from "react-scroll-parallax";
+import Plx from "react-plx";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -47,128 +48,99 @@ export default function Hero() {
     progressCircle.current.style.setProperty("--progress", 1 - progress);
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
+
+  const textData = [
+    {
+      start: ".StickyText-trigger",
+      duration: "30vh",
+      properties: [
+        {
+          startValue: 0,
+          endValue: -50,
+          unit: "vh",
+          property: "translateY",
+        },
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacity",
+        },
+      ],
+    },
+    {
+      start: ".StickyText-trigger",
+      startOffset: "60vh",
+      duration: "30vh",
+      properties: [
+        {
+          startValue: -50,
+          endValue: -100,
+          unit: "vh",
+          property: "translateY",
+        },
+        {
+          startValue: 1,
+          endValue: 0,
+          property: "opacity",
+        },
+      ],
+    },
+  ];
+
+  const StickyText = (props) => {
+    return (
+      <Plx {...props} className="StickyText" parallaxData={textData}>
+        <h2>
+          Make elements fly in and stick for some time before they fly out
+        </h2>
+      </Plx>
+    );
+  };
+
   return (
     <>
-      {" "}
-      {/* <motion.div
-        initial={{ opacity: 0, y: "-100px" }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 1.4,
-          ease: [0, 0.71, 0.2, 1.01],
-          scale: {
-            type: "tween",
-            damping: 5,
-            stiffness: 10,
-            restDelta: 0.001,
-          },
-        }}
-      > */}
-      <Navbar />
-      {/* </motion.div>
-      <motion.div
-        initial={{ opacity: 0, y: "900px" }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: 1.4,
-          ease: [0, 0.71, 0.2, 1.01],
-          scale: {
-            type: "tween",
-            damping: 5,
-            stiffness: 10,
-            restDelta: 0.001,
-          },
-        }}
-      > */}
-      {/* <div className="sm:h-full tablet:h-full laptop:h-full w-full h-full bg-ocean bg-no-repeat flex items-center justify-center"> */}
-      {/* <div className="text-center sm:w-full"> */}
-      <div className="w-screen text-center h-full pb-12 bg-white">
-        <Image
-          className="mx-auto"
-          src="/UN&DEMI Logo 2.svg"
-          width={800}
-          height={18}
-          alt="logo"
-          priority="true"
-        />
-        {/* <svg
-          version="1.1"
-          id="Capa_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 500 500"
-          xmlSpace="preserve"
-          width="500"
-          height="500"
+      <Navbar />{" "}
+      <div className="w-screen text-center h-auto pb-12 bg-white bg-fit bg-no-repeat">
+        <ParallaxBanner
+          className="bg-white"
+          style={{ aspectRatio: "1 / 1" }}
+          layers={[
+            {
+              image: "/beach-2592454.jpg",
+              speed: -100,
+            },
+          ]}
         >
-          <g id="Capa_8">
-            <path
-              class="st0 svg-elem-1"
-              d="M902.9,539.5c0-31.8,19.8-58.9,47.7-69.9c3.8-1.5,6.3-5.2,6.3-9.3V307.5c0-5.1-1.9-10-5.5-13.5
-		c-2.2-2.2-4.4-3.2-6.1-3.7c-25.1-7.3-70.3,42.3-89.5,97.5c-3,8.7-6.4,17.4-10.2,25.8c-6.5,14.1-6,16.4-21.7,47.9
-		c-8.3,16.6-16.8,32.6-20.8,45.5c0,0-8.5,29.5-6.2,61.5c5.2,72.2,69,144,147.3,146.2c6.9,0.2,12.7-5.3,12.7-12.2v-83.8
-		c0-4.1-2.5-7.8-6.3-9.3C922.7,598.4,902.9,571.3,902.9,539.5z"
-            ></path>
-          </g>
-          <g id="Capa_12">
-            <path
-              class="st0 svg-elem-2"
-              d="M1014.6,664.7c-6.9,0.2-12.7-5.3-12.7-12.2v-33.8c0-4.1,2.5-7.8,6.3-9.3c27.9-10.9,47.7-38.1,47.7-69.8
-		s-19.8-58.9-47.7-69.9c-3.8-1.5-6.3-5.2-6.3-9.3v-94.9c0-5.1,1.9-10,5.5-13.5c2.2-2.2,4.4-3.2,6.1-3.7"
-            ></path>
-          </g>
-          <g id="Capa_6">
-            <path
-              class="st1 svg-elem-3"
-              d="M1118.6,510.2c-3-9.6-9.3-21.6-15.5-33.9c-11.6-23.3-11.4-25.2-16.1-35.5c-2.7-6-5.2-12.1-7.3-18.4
-		c-14-41.6-48.2-79.3-67.1-73.8c-1.3,0.4-2.9,1.1-4.6,2.8c-2.7,2.6-4.1,6.3-4.1,10l12,99c0,3.8,1.9,7.3,5.1,9.3
-		c23,14.9,38.3,40.7,38.3,70.2c0,29.5-15.3,55.3-38.3,70.2c-3.2,2-5.1,5.6-5.1,9.3l-12,36.5c0,5.2,4.3,9.3,9.5,9.1
-		c58.4-1.6,106-55.2,109.9-109C1124.9,532.1,1118.6,510.2,1118.6,510.2z"
-            ></path>
-          </g>
-        </svg> */}
-        <p className="selection:bg-009999 selection:text-white text-009999 text-center text-[9rem] sm:text-5xl sm:w-full sm:pb-5 sm:pt-12 sm:text-center tablet:text-5xl tablet:pb-10 laptop:text-6xl uppercase font-bold tracking-wide">
-          un & demi{" "}
-        </p>{" "}
-        <p className="selection:bg-009999 selection:text-white text-black text-center text-4xl tablet:text-3xl sm:text-xl laptop:text-2xl laptop:pb-14 sm:pb-6 font-light uppercase pb-12">
-          pédagogie et enthousiasme climatique{" "}
-        </p>{" "}
-        <button class="bg-transparent pt-12">
-          <Link href="#presentation" className="uppercase" scroll={false}>
+          <div className="absolute inset-0 items-center justify-center">
             <Image
-              src="/arrow_down.svg"
-              alt="arrow down"
-              width={100}
-              height={100}
-            />{" "}
-          </Link>{" "}
-        </button>{" "}
-      </div>
-      <div
-        id="presentation"
-        className="h-full sm:h-full sm:pb-10 tablet:h-full laptop:h-full bg-white sm:grid sm:grid-cols-1"
-      >
-        <div className="px-64 sm:px-12 tablet:px-12 ">
-          <Zoom triggerOnce={true}>
-            <p className="text-009999 text-left text-[3rem] tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left laptop:text-left pt-12 uppercase font-bold tracking-wide">
-              UN&DEMI est un cabinet de conseil indépendant.
+              className="mx-auto"
+              src="/UN&DEMI Logo 2.svg"
+              width={850}
+              height={1}
+              alt="logo"
+              priority="true"
+            />
+            <p className="selection:bg-009999 selection:text-white text-009999 text-center text-[9rem] sm:text-5xl sm:w-full sm:pb-5 sm:pt-12 sm:text-center tablet:text-5xl tablet:pb-10 laptop:text-6xl uppercase font-bold tracking-wide">
+              un & demi{" "}
             </p>{" "}
-            <p className="text-009999 text-left text-xl sm:text-sm sm:w-full sm:pr-5 sm:text-left tablet:font-thin tablet:text-left laptop:text-left sm:font-thin font-bold tracking-wide">
-              Partenaire privilégié, il accompagne votre organisation dans la
-              transition bas-carbone et l&apos;adaptation à la dérive
-              climatique.{" "}
-              <div>
-                <div className="tablet:col-span-3 laptop:col-span-3">
-                  <Zoom triggerOnce={true}>
+            <p className="selection:bg-009999 selection:text-white text-black text-center text-4xl tablet:text-3xl sm:text-xl laptop:text-2xl laptop:pb-14 sm:pb-6 font-light uppercase pb-12">
+              pédagogie et enthousiasme climatique{" "}
+            </p>{" "}
+            <div className="px-64 sm:px-12 tablet:px-12 ">
+              <p className="text-009999 text-left text-[3rem] tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left laptop:text-left pt-12 uppercase font-bold tracking-wide">
+                UN&DEMI est un cabinet de conseil indépendant.
+              </p>{" "}
+              <p className="text-009999 text-left text-xl sm:text-sm sm:w-full sm:pr-5 sm:text-left tablet:font-thin tablet:text-left laptop:text-left sm:font-thin font-bold tracking-wide">
+                Partenaire privilégié, il accompagne votre organisation dans la
+                transition bas-carbone et l&apos;adaptation à la dérive
+                climatique.{" "}
+                <div>
+                  <div className="tablet:col-span-3 laptop:col-span-3">
                     <p className="text-009999 text-left text-4xl tablet:text-4xl sm:text-xl sm:w-full sm:pr-5 sm:text-left tablet:text-left laptop:text-left pt-12 uppercase font-bold tracking-wide">
                       UN&DEMI vous accompagne à chaque étape de la mise en place
                       de votre stratégie énergie-climat:
                     </p>{" "}
-                  </Zoom>
-                </div>
-                <Zoom triggerOnce={true}>
+                  </div>
                   <div className="tablet:col-span-3">
                     <p className="text-black text-left text-2xl text-justify sm:text-lg sm:pt-5 pt-10 tablet:pt-12 tablet:pb-12 laptop:pb-12 laptop:pt-12">
                       <p className="text-left sm:text-left">
@@ -191,13 +163,19 @@ export default function Hero() {
                       </p>
                     </p>{" "}
                   </div>{" "}
-                </Zoom>
-              </div>
-              <br></br> Nous vous proposons une approche basée sur les trois
-              piliers qui fondent notre identité :
-            </p>{" "}
-          </Zoom>
-
+                  <br></br> Nous vous proposons une approche basée sur les trois
+                  piliers qui fondent notre identité :
+                </div>
+              </p>{" "}
+            </div>
+          </div>
+        </ParallaxBanner>
+      </div>
+      <div
+        id="presentation"
+        className="h-full sm:h-full sm:pb-10 tablet:h-full laptop:h-full bg-white sm:grid sm:grid-cols-1"
+      >
+        <div className="px-64 sm:px-12 tablet:px-12 ">
           <div className="grid grid-cols-2 gap-4 sm:grid sm:grid-cols-1">
             <p className="text-black text-justify pb-12 pt-20 text-2xl sm:text-lg">
               <b className="uppercase text-009999 sm:text-xl">La pédagogie. </b>{" "}

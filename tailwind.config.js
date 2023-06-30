@@ -49,7 +49,7 @@ module.exports = {
       },
     },
     backgroundImage: {
-      'ocean' : "url(../../public/ocean3.avif)",
+      'beach' : "url(../../public/beach-2592454.jpg)",
       'forest' : "url(../../public/bg.png)",
       'expertise' :"url(../../public/expertise.jpg)",
     },
